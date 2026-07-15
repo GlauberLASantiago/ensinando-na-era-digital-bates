@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecionamento - Ensinando na Era Digital</title>
+    <!-- Redirecionamento automático após 3 segundos -->
+    <meta http-equiv="refresh" content="3;url=https://ensinando-na-era-digital-tony-bates.web.app">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #1e3a8a;
+            --primary-light: #3b82f6;
+            --text-dark: #0f172a;
+            --text-muted: #475569;
+            --bg: #f8fafc;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg);
+            color: var(--text-dark);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 500px;
+            padding: 2.5rem;
+            background: white;
+            border-radius: 24px;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
+            border: 1px solid #e2e8f0;
+            margin: 1.5rem;
+        }
+
+        .icon {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+            display: inline-block;
+            animation: pulse 2s infinite;
+        }
+
+        h1 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 0.75rem;
+            color: var(--primary);
+        }
+
+        p {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            line-height: 1.6;
+            margin-bottom: 2rem;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background-color: var(--primary);
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: 550;
+            transition: all 0.2s ease;
+            box-shadow: 0 4px 6px -1px rgba(30, 58, 138, 0.2);
+        }
+
+        .btn:hover {
+            background-color: var(--primary-light);
+            transform: translateY(-1px);
+        }
+
+        .timer {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            margin-top: 1.5rem;
+            font-weight: 500;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="icon">🔗</div>
+        <h1>Domínio Padrão do Projeto</h1>
+        <p>Este é o endereço padrão do projeto. O livro digital e o audiobook estão hospedados em seu domínio definitivo e otimizado:</p>
+        
+        <a href="https://ensinando-na-era-digital-tony-bates.web.app" class="btn">
+            Ir para o site oficial
+        </a>
+
+        <div class="timer">
+            Você será redirecionado automaticamente em <span id="countdown">3</span> segundos...
+        </div>
+    </div>
+
+    <script>
+        let seconds = 3;
+        const countdownEl = document.getElementById('countdown');
+        const interval = setInterval(() => {
+            seconds--;
+            countdownEl.textContent = seconds;
+            if (seconds <= 0) {
+                clearInterval(interval);
+                window.location.href = "https://ensinando-na-era-digital-tony-bates.web.app";
+            }
+        }, 1000);
+    </script>
+</body>
+</html>

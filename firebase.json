@@ -1,18 +1,30 @@
 {
-  "hosting": {
-    "site": "ensinando-na-era-digital-tony-bates",
-    "public": ".",
-    "ignore": [
-      "firebase.json",
-      "**/.*",
-      "**/node_modules/**",
-      "README.md",
-      "LICENSE",
-      ".git",
-      ".gitignore",
-      "audiobook/**",
-      "OEBPS/assets/audio-*.mp3",
-      "OEBPS/assets/audio_*.mp3"
-    ]
-  }
+  "hosting": [
+    {
+      "site": "ensinando-na-era-digital-tony-bates",
+      "public": ".",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**",
+        "README.md",
+        "LICENSE",
+        ".git",
+        ".gitignore",
+        "audiobook/**",
+        "OEBPS/assets/audio-*.mp3",
+        "OEBPS/assets/audio_*.mp3",
+        "placeholder/**"
+      ]
+    },
+    {
+      "site": "horizonte-7ec73",
+      "public": "placeholder",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ]
+    }
+  ]
 }
