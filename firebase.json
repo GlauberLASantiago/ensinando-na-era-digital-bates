@@ -1,5 +1,6 @@
 {
   "hosting": {
+    "site": "ensinando-na-era-digital-tony-bates",
     "public": ".",
     "ignore": [
       "firebase.json",
