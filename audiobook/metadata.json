@@ -1,0 +1,107 @@
+[
+    {
+        "key": "pretextual",
+        "title": "Elementos Pré-Textuais",
+        "filename": "audiobook-pretextual.mp3",
+        "size_mb": 10.21,
+        "files_count": 7
+    },
+    {
+        "key": "part-001",
+        "title": "Capítulo 1: Mudança Fundamental na Educação",
+        "filename": "audiobook-capitulo-01.mp3",
+        "size_mb": 28.75,
+        "files_count": 9
+    },
+    {
+        "key": "part-002",
+        "title": "Capítulo 2: A natureza do conhecimento e as implicações para o ensino",
+        "filename": "audiobook-capitulo-02.mp3",
+        "size_mb": 29.11,
+        "files_count": 10
+    },
+    {
+        "key": "part-003",
+        "title": "Capítulo 3: Métodos de ensino com foco presencial",
+        "filename": "audiobook-capitulo-03.mp3",
+        "size_mb": 33.87,
+        "files_count": 10
+    },
+    {
+        "key": "part-004",
+        "title": "Capítulo 4: Métodos de ensino com foco on-line",
+        "filename": "audiobook-capitulo-04.mp3",
+        "size_mb": 37.93,
+        "files_count": 11
+    },
+    {
+        "key": "part-005",
+        "title": "Capítulo 5: MOOCs",
+        "filename": "audiobook-capitulo-05.mp3",
+        "size_mb": 45.56,
+        "files_count": 8
+    },
+    {
+        "key": "part-006",
+        "title": "Capítulo 6: Construindo um ambiente de aprendizagem eficaz",
+        "filename": "audiobook-capitulo-06.mp3",
+        "size_mb": 32.52,
+        "files_count": 11
+    },
+    {
+        "key": "part-007",
+        "title": "Capítulo 7: Compreendendo a tecnologia na educação",
+        "filename": "audiobook-capitulo-07.mp3",
+        "size_mb": 37.34,
+        "files_count": 9
+    },
+    {
+        "key": "part-008",
+        "title": "Capítulo 8: Diferenças pedagógicas entre mídias",
+        "filename": "audiobook-capitulo-08.mp3",
+        "size_mb": 61.16,
+        "files_count": 12
+    },
+    {
+        "key": "part-009",
+        "title": "Capítulo 9: Escolhendo e usando mídias na educação: o modelo SECTIONS",
+        "filename": "audiobook-capitulo-09.mp3",
+        "size_mb": 46.29,
+        "files_count": 11
+    },
+    {
+        "key": "part-010",
+        "title": "Capítulo 10: Modos de distribuição",
+        "filename": "audiobook-capitulo-10.mp3",
+        "size_mb": 21.53,
+        "files_count": 6
+    },
+    {
+        "key": "part-011",
+        "title": "Capítulo 11: Tendências na educação aberta",
+        "filename": "audiobook-capitulo-11.mp3",
+        "size_mb": 33.55,
+        "files_count": 7
+    },
+    {
+        "key": "part-012",
+        "title": "Capítulo 12: Garantir um ensino de qualidade na era digital",
+        "filename": "audiobook-capitulo-12.mp3",
+        "size_mb": 47.18,
+        "files_count": 13
+    },
+    {
+        "key": "part-013",
+        "title": "Capítulo 13: Apoiar os professores e instrutores na era digital",
+        "filename": "audiobook-capitulo-13.mp3",
+        "size_mb": 25.39,
+        "files_count": 9
+    },
+    {
+        "key": "appendices",
+        "title": "Apêndices e Anexos",
+        "filename": "audiobook-apendices.mp3",
+        "size_mb": 31.37,
+        "files_count": 21
+    }
+]
