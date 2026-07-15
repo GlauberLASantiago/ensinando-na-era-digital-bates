@@ -177,7 +177,9 @@ body {
   font-weight: normal;
   line-height: 1.4em;
   word-wrap: break-word;
-  overflow-wrap: break-word; }
+  overflow-wrap: break-word;
+  padding: 0 1.25rem;
+  box-sizing: border-box; }
 
 body * {
   line-height: inherit; }
