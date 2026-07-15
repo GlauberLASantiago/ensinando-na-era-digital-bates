@@ -53,11 +53,16 @@
             letter-spacing: -0.02em;
         }
 
+        html {
+            scroll-behavior: smooth;
+        }
+
         main {
             flex: 1;
             display: flex;
+            flex-direction: column;
             align-items: center;
-            justify-content: center;
+            justify-content: flex-start;
             padding: 2rem 4rem;
             max-width: 1400px;
             margin: 0 auto;
@@ -375,6 +380,216 @@
             background-color: #38bdf8;
             color: #0f172a;
         }
+
+        /* Audiobook Section CSS */
+        .main-container {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 4rem;
+            padding: 1rem 0;
+        }
+
+        .audiobook-section {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            padding: 3rem;
+            border-radius: 24px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.03);
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            margin-top: 1rem;
+            margin-bottom: 2rem;
+            border-left: 6px solid var(--primary-light);
+        }
+
+        html.dark-theme .audiobook-section {
+            border-left-color: #38bdf8;
+        }
+
+        .audiobook-header {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 0.5rem auto;
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+
+        .audiobook-header h2 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 2.25rem;
+            font-weight: 800;
+            color: var(--primary-dark);
+            letter-spacing: -0.02em;
+        }
+
+        html.dark-theme .audiobook-header h2 {
+            color: #ffffff;
+        }
+
+        .audiobook-header h2 span {
+            background: linear-gradient(to right, var(--primary-light), var(--accent));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .audiobook-subtitle {
+            font-size: 1rem;
+            color: var(--text-light);
+            line-height: 1.6;
+        }
+
+        .audiobook-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+        }
+
+        @media (max-width: 900px) {
+            .audiobook-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .audiobook-card {
+            background: rgba(255, 255, 255, 0.4);
+            border: 1px solid rgba(255, 255, 255, 0.6);
+            border-radius: 16px;
+            padding: 1.25rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1rem;
+            transition: all 0.2s ease;
+        }
+
+        html.dark-theme .audiobook-card {
+            background: rgba(15, 23, 42, 0.3);
+            border: 1px solid rgba(255, 255, 255, 0.03);
+        }
+
+        .audiobook-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.04);
+            border-color: var(--primary-light);
+            background: rgba(255, 255, 255, 0.7);
+        }
+
+        html.dark-theme .audiobook-card:hover {
+            background: rgba(30, 41, 59, 0.5);
+            border-color: #38bdf8;
+        }
+
+        .audiobook-info {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            flex: 1;
+            min-width: 0;
+        }
+
+        .audiobook-number {
+            width: 48px;
+            height: 48px;
+            border-radius: 12px;
+            background: linear-gradient(135deg, rgba(37, 99, 235, 0.1), rgba(59, 130, 246, 0.1));
+            color: var(--primary-light);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Outfit', sans-serif;
+            font-weight: 700;
+            font-size: 1.1rem;
+            flex-shrink: 0;
+        }
+
+        html.dark-theme .audiobook-number {
+            background: linear-gradient(135deg, rgba(56, 189, 248, 0.15), rgba(37, 99, 235, 0.15));
+            color: #38bdf8;
+        }
+
+        .audiobook-details {
+            display: flex;
+            flex-direction: column;
+            gap: 0.25rem;
+            min-width: 0;
+        }
+
+        .audiobook-title {
+            font-weight: 600;
+            font-size: 0.95rem;
+            color: var(--text-dark);
+            line-height: 1.4;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .audiobook-meta {
+            font-size: 0.8rem;
+            color: var(--text-light);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .audiobook-actions {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            flex-shrink: 0;
+        }
+
+        .btn-audio-action {
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            border: 1px solid var(--border);
+            background: white;
+            color: var(--text-dark);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            font-size: 1rem;
+            text-decoration: none;
+        }
+
+        html.dark-theme .btn-audio-action {
+            background: #1e293b;
+            border-color: #334155;
+            color: #f1f5f9;
+        }
+
+        .btn-audio-action:hover {
+            background: var(--primary-light);
+            color: white;
+            border-color: var(--primary-light);
+            transform: scale(1.05);
+        }
+
+        html.dark-theme .btn-audio-action:hover {
+            background: #38bdf8;
+            color: #0f172a;
+            border-color: #38bdf8;
+        }
+
+        @media (max-width: 768px) {
+            .audiobook-section {
+                padding: 1.5rem;
+                border-radius: 16px;
+            }
+            .audiobook-title {
+                white-space: normal;
+                overflow: visible;
+                text-overflow: clip;
+            }
+        }
     </style>
 </head>
 <body>
@@ -387,29 +602,266 @@
     </header>
 
     <main>
-        <div class="hero-grid">
-            <div class="info-section">
-                <span class="badge">Segunda Edição Traduzida</span>
-                <h1>Ensinando na<br><span>Era Digital</span></h1>
-                <p class="subtitle">Diretrizes para o ensino e a aprendizagem</p>
-                <p class="author">Por Tony Bates</p>
+        <div class="main-container">
+            <div class="hero-grid">
+                <div class="info-section">
+                    <span class="badge">Segunda Edição Traduzida</span>
+                    <h1>Ensinando na<br><span>Era Digital</span></h1>
+                    <p class="subtitle">Diretrizes para o ensino e a aprendizagem</p>
+                    <p class="author">Por Tony Bates</p>
+                    
+                    <div class="context-card">
+                        <p>Esta tradução foi realizada utilizando recursos de <strong>Inteligência Artificial</strong> sob supervisão do <strong>Prof. Glauber Santiago (UFSCar)</strong>.</p>
+                        <p>Esta iniciativa visa difundir o trabalho de excelência do autor Tony Bates, facilitando e ampliando o acesso para educadores, gestores e pesquisadores no Brasil.</p>
+                    </div>
+
+                    <div class="cta-container" style="display: flex; gap: 1rem; align-items: center; flex-wrap: wrap; margin-top: 2rem;">
+                        <a href="leitor.html" class="btn-primary">Entrar no Livro</a>
+                        <a href="#audiobook" class="btn-secondary">🎧 Ouvir Audiobook</a>
+                        <button id="pwa-install-btn" class="btn-secondary" style="display: none;">Instalar no Dispositivo</button>
+                    </div>
+                </div>
                 
-                <div class="context-card">
-                    <p>Esta tradução foi realizada utilizando recursos de <strong>Inteligência Artificial</strong> sob supervisão do <strong>Prof. Glauber Santiago (UFSCar)</strong>.</p>
-                    <p>Esta iniciativa visa difundir o trabalho de excelência do autor Tony Bates, facilitando e ampliando o acesso para educadores, gestores e pesquisadores no Brasil.</p>
+                <div class="cover-section">
+                    <div class="book-wrapper">
+                        <img src="OEBPS/assets/Cover-V2-jpg.jpg" alt="Capa do livro: Ensinando na Era Digital" class="book-cover">
+                    </div>
+                </div>
+            </div>
+
+            <section class="audiobook-section" id="audiobook">
+                <div class="audiobook-header">
+                    <h2><span>Audiobook</span> em Capítulos</h2>
+                    <p class="audiobook-subtitle">Ouça o livro completo dividido em partes. Todos os áudios estão em formato MP3 de alta qualidade. Você pode ouvir uma pré-visualização ou baixar o capítulo completo.</p>
                 </div>
 
-                <div class="cta-container" style="display: flex; gap: 1rem; align-items: center; flex-wrap: wrap; margin-top: 2rem;">
-                    <a href="leitor.html" class="btn-primary">Entrar no Livro</a>
-                    <button id="pwa-install-btn" class="btn-secondary" style="display: none;">Instalar no Dispositivo</button>
+                <div class="audiobook-grid">
+                    <!-- Elementos Pré-Textuais -->
+                    <div class="audiobook-card">
+                        <div class="audiobook-info">
+                            <div class="audiobook-number" title="Elementos Pré-Textuais">📖</div>
+                            <div class="audiobook-details">
+                                <div class="audiobook-title" title="Elementos Pré-Textuais">Elementos Pré-Textuais</div>
+                                <div class="audiobook-meta"><span>7 arquivos</span> &bull; <span>10.21 MB</span></div>
+                            </div>
+                        </div>
+                        <div class="audiobook-actions">
+                            <button class="btn-audio-action play-btn" data-src="audiobook/audiobook-pretextual.mp3" title="Ouvir">▶️</button>
+                            <a href="audiobook/audiobook-pretextual.mp3" class="btn-audio-action download-btn" download title="Baixar">📥</a>
+                        </div>
+                    </div>
+
+                    <!-- Capítulo 1 -->
+                    <div class="audiobook-card">
+                        <div class="audiobook-info">
+                            <div class="audiobook-number">01</div>
+                            <div class="audiobook-details">
+                                <div class="audiobook-title" title="Capítulo 1: Mudança Fundamental na Educação">Capítulo 1: Mudança Fundamental na Educação</div>
+                                <div class="audiobook-meta"><span>9 arquivos</span> &bull; <span>28.75 MB</span></div>
+                            </div>
+                        </div>
+                        <div class="audiobook-actions">
+                            <button class="btn-audio-action play-btn" data-src="audiobook/audiobook-capitulo-01.mp3" title="Ouvir">▶️</button>
+                            <a href="audiobook/audiobook-capitulo-01.mp3" class="btn-audio-action download-btn" download title="Baixar">📥</a>
+                        </div>
+                    </div>
+
+                    <!-- Capítulo 2 -->
+                    <div class="audiobook-card">
+                        <div class="audiobook-info">
+                            <div class="audiobook-number">02</div>
+                            <div class="audiobook-details">
+                                <div class="audiobook-title" title="Capítulo 2: A natureza do conhecimento e as implicações para o ensino">Capítulo 2: A natureza do conhecimento e as implicações para o ensino</div>
+                                <div class="audiobook-meta"><span>10 arquivos</span> &bull; <span>29.11 MB</span></div>
+                            </div>
+                        </div>
+                        <div class="audiobook-actions">
+                            <button class="btn-audio-action play-btn" data-src="audiobook/audiobook-capitulo-02.mp3" title="Ouvir">▶️</button>
+                            <a href="audiobook/audiobook-capitulo-02.mp3" class="btn-audio-action download-btn" download title="Baixar">📥</a>
+                        </div>
+                    </div>
+
+                    <!-- Capítulo 3 -->
+                    <div class="audiobook-card">
+                        <div class="audiobook-info">
+                            <div class="audiobook-number">03</div>
+                            <div class="audiobook-details">
+                                <div class="audiobook-title" title="Capítulo 3: Métodos de ensino com foco presencial">Capítulo 3: Métodos de ensino com foco presencial</div>
+                                <div class="audiobook-meta"><span>10 arquivos</span> &bull; <span>33.87 MB</span></div>
+                            </div>
+                        </div>
+                        <div class="audiobook-actions">
+                            <button class="btn-audio-action play-btn" data-src="audiobook/audiobook-capitulo-03.mp3" title="Ouvir">▶️</button>
+                            <a href="audiobook/audiobook-capitulo-03.mp3" class="btn-audio-action download-btn" download title="Baixar">📥</a>
+                        </div>
+                    </div>
+
+                    <!-- Capítulo 4 -->
+                    <div class="audiobook-card">
+                        <div class="audiobook-info">
+                            <div class="audiobook-number">04</div>
+                            <div class="audiobook-details">
+                                <div class="audiobook-title" title="Capítulo 4: Métodos de ensino com foco on-line">Capítulo 4: Métodos de ensino com foco on-line</div>
+                                <div class="audiobook-meta"><span>11 arquivos</span> &bull; <span>37.93 MB</span></div>
+                            </div>
+                        </div>
+                        <div class="audiobook-actions">
+                            <button class="btn-audio-action play-btn" data-src="audiobook/audiobook-capitulo-04.mp3" title="Ouvir">▶️</button>
+                            <a href="audiobook/audiobook-capitulo-04.mp3" class="btn-audio-action download-btn" download title="Baixar">📥</a>
+                        </div>
+                    </div>
+
+                    <!-- Capítulo 5 -->
+                    <div class="audiobook-card">
+                        <div class="audiobook-info">
+                            <div class="audiobook-number">05</div>
+                            <div class="audiobook-details">
+                                <div class="audiobook-title" title="Capítulo 5: MOOCs">Capítulo 5: MOOCs</div>
+                                <div class="audiobook-meta"><span>8 arquivos</span> &bull; <span>45.56 MB</span></div>
+                            </div>
+                        </div>
+                        <div class="audiobook-actions">
+                            <button class="btn-audio-action play-btn" data-src="audiobook/audiobook-capitulo-05.mp3" title="Ouvir">▶️</button>
+                            <a href="audiobook/audiobook-capitulo-05.mp3" class="btn-audio-action download-btn" download title="Baixar">📥</a>
+                        </div>
+                    </div>
+
+                    <!-- Capítulo 6 -->
+                    <div class="audiobook-card">
+                        <div class="audiobook-info">
+                            <div class="audiobook-number">06</div>
+                            <div class="audiobook-details">
+                                <div class="audiobook-title" title="Capítulo 6: Construindo um ambiente de aprendizagem eficaz">Capítulo 6: Construindo um ambiente de aprendizagem eficaz</div>
+                                <div class="audiobook-meta"><span>11 arquivos</span> &bull; <span>32.52 MB</span></div>
+                            </div>
+                        </div>
+                        <div class="audiobook-actions">
+                            <button class="btn-audio-action play-btn" data-src="audiobook/audiobook-capitulo-06.mp3" title="Ouvir">▶️</button>
+                            <a href="audiobook/audiobook-capitulo-06.mp3" class="btn-audio-action download-btn" download title="Baixar">📥</a>
+                        </div>
+                    </div>
+
+                    <!-- Capítulo 7 -->
+                    <div class="audiobook-card">
+                        <div class="audiobook-info">
+                            <div class="audiobook-number">07</div>
+                            <div class="audiobook-details">
+                                <div class="audiobook-title" title="Capítulo 7: Compreendendo a tecnologia na educação">Capítulo 7: Compreendendo a tecnologia na educação</div>
+                                <div class="audiobook-meta"><span>9 arquivos</span> &bull; <span>37.34 MB</span></div>
+                            </div>
+                        </div>
+                        <div class="audiobook-actions">
+                            <button class="btn-audio-action play-btn" data-src="audiobook/audiobook-capitulo-07.mp3" title="Ouvir">▶️</button>
+                            <a href="audiobook/audiobook-capitulo-07.mp3" class="btn-audio-action download-btn" download title="Baixar">📥</a>
+                        </div>
+                    </div>
+
+                    <!-- Capítulo 8 -->
+                    <div class="audiobook-card">
+                        <div class="audiobook-info">
+                            <div class="audiobook-number">08</div>
+                            <div class="audiobook-details">
+                                <div class="audiobook-title" title="Capítulo 8: Diferenças pedagógicas entre mídias">Capítulo 8: Diferenças pedagógicas entre mídias</div>
+                                <div class="audiobook-meta"><span>12 arquivos</span> &bull; <span>61.16 MB</span></div>
+                            </div>
+                        </div>
+                        <div class="audiobook-actions">
+                            <button class="btn-audio-action play-btn" data-src="audiobook/audiobook-capitulo-08.mp3" title="Ouvir">▶️</button>
+                            <a href="audiobook/audiobook-capitulo-08.mp3" class="btn-audio-action download-btn" download title="Baixar">📥</a>
+                        </div>
+                    </div>
+
+                    <!-- Capítulo 9 -->
+                    <div class="audiobook-card">
+                        <div class="audiobook-info">
+                            <div class="audiobook-number">09</div>
+                            <div class="audiobook-details">
+                                <div class="audiobook-title" title="Capítulo 9: Escolhendo e usando mídias na educação: o modelo SECTIONS">Capítulo 9: Escolhendo e usando mídias na educação: o modelo SECTIONS</div>
+                                <div class="audiobook-meta"><span>11 arquivos</span> &bull; <span>46.29 MB</span></div>
+                            </div>
+                        </div>
+                        <div class="audiobook-actions">
+                            <button class="btn-audio-action play-btn" data-src="audiobook/audiobook-capitulo-09.mp3" title="Ouvir">▶️</button>
+                            <a href="audiobook/audiobook-capitulo-09.mp3" class="btn-audio-action download-btn" download title="Baixar">📥</a>
+                        </div>
+                    </div>
+
+                    <!-- Capítulo 10 -->
+                    <div class="audiobook-card">
+                        <div class="audiobook-info">
+                            <div class="audiobook-number">10</div>
+                            <div class="audiobook-details">
+                                <div class="audiobook-title" title="Capítulo 10: Modos de distribuição">Capítulo 10: Modos de distribuição</div>
+                                <div class="audiobook-meta"><span>6 arquivos</span> &bull; <span>21.53 MB</span></div>
+                            </div>
+                        </div>
+                        <div class="audiobook-actions">
+                            <button class="btn-audio-action play-btn" data-src="audiobook/audiobook-capitulo-10.mp3" title="Ouvir">▶️</button>
+                            <a href="audiobook/audiobook-capitulo-10.mp3" class="btn-audio-action download-btn" download title="Baixar">📥</a>
+                        </div>
+                    </div>
+
+                    <!-- Capítulo 11 -->
+                    <div class="audiobook-card">
+                        <div class="audiobook-info">
+                            <div class="audiobook-number">11</div>
+                            <div class="audiobook-details">
+                                <div class="audiobook-title" title="Capítulo 11: Tendências na educação aberta">Capítulo 11: Tendências na educação aberta</div>
+                                <div class="audiobook-meta"><span>7 arquivos</span> &bull; <span>33.55 MB</span></div>
+                            </div>
+                        </div>
+                        <div class="audiobook-actions">
+                            <button class="btn-audio-action play-btn" data-src="audiobook/audiobook-capitulo-11.mp3" title="Ouvir">▶️</button>
+                            <a href="audiobook/audiobook-capitulo-11.mp3" class="btn-audio-action download-btn" download title="Baixar">📥</a>
+                        </div>
+                    </div>
+
+                    <!-- Capítulo 12 -->
+                    <div class="audiobook-card">
+                        <div class="audiobook-info">
+                            <div class="audiobook-number">12</div>
+                            <div class="audiobook-details">
+                                <div class="audiobook-title" title="Capítulo 12: Garantir um ensino de qualidade na era digital">Capítulo 12: Garantir um ensino de qualidade na era digital</div>
+                                <div class="audiobook-meta"><span>13 arquivos</span> &bull; <span>47.18 MB</span></div>
+                            </div>
+                        </div>
+                        <div class="audiobook-actions">
+                            <button class="btn-audio-action play-btn" data-src="audiobook/audiobook-capitulo-12.mp3" title="Ouvir">▶️</button>
+                            <a href="audiobook/audiobook-capitulo-12.mp3" class="btn-audio-action download-btn" download title="Baixar">📥</a>
+                        </div>
+                    </div>
+
+                    <!-- Capítulo 13 -->
+                    <div class="audiobook-card">
+                        <div class="audiobook-info">
+                            <div class="audiobook-number">13</div>
+                            <div class="audiobook-details">
+                                <div class="audiobook-title" title="Capítulo 13: Apoiar os professores e instrutores na era digital">Capítulo 13: Apoiar os professores e instrutores na era digital</div>
+                                <div class="audiobook-meta"><span>9 arquivos</span> &bull; <span>25.39 MB</span></div>
+                            </div>
+                        </div>
+                        <div class="audiobook-actions">
+                            <button class="btn-audio-action play-btn" data-src="audiobook/audiobook-capitulo-13.mp3" title="Ouvir">▶️</button>
+                            <a href="audiobook/audiobook-capitulo-13.mp3" class="btn-audio-action download-btn" download title="Baixar">📥</a>
+                        </div>
+                    </div>
+
+                    <!-- Apêndices e Anexos -->
+                    <div class="audiobook-card">
+                        <div class="audiobook-info">
+                            <div class="audiobook-number" title="Apêndices e Anexos">📚</div>
+                            <div class="audiobook-details">
+                                <div class="audiobook-title" title="Apêndices e Anexos">Apêndices e Anexos</div>
+                                <div class="audiobook-meta"><span>21 arquivos</span> &bull; <span>31.37 MB</span></div>
+                            </div>
+                        </div>
+                        <div class="audiobook-actions">
+                            <button class="btn-audio-action play-btn" data-src="audiobook/audiobook-apendices.mp3" title="Ouvir">▶️</button>
+                            <a href="audiobook/audiobook-apendices.mp3" class="btn-audio-action download-btn" download title="Baixar">📥</a>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            
-            <div class="cover-section">
-                <div class="book-wrapper">
-                    <img src="OEBPS/assets/Cover-V2-jpg.jpg" alt="Capa do livro: Ensinando na Era Digital" class="book-cover">
-                </div>
-            </div>
+            </section>
         </div>
     </main>
 
@@ -486,6 +938,50 @@
         window.addEventListener('appinstalled', (evt) => {
             console.log('Aplicativo instalado com sucesso!');
             installBtn.style.display = 'none';
+        });
+
+        // Lógica do Player de Audiobook
+        const audioPlayer = document.createElement('audio');
+        document.body.appendChild(audioPlayer);
+        let activePlayBtn = null;
+
+        document.querySelectorAll('.play-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const src = btn.getAttribute('data-src');
+                
+                if (activePlayBtn === btn) {
+                    if (audioPlayer.paused) {
+                        audioPlayer.play();
+                        btn.textContent = '⏸️';
+                    } else {
+                        audioPlayer.pause();
+                        btn.textContent = '▶️';
+                    }
+                    return;
+                }
+                
+                if (activePlayBtn) {
+                    activePlayBtn.textContent = '▶️';
+                }
+                
+                audioPlayer.src = src;
+                audioPlayer.play()
+                    .then(() => {
+                        btn.textContent = '⏸️';
+                        activePlayBtn = btn;
+                    })
+                    .catch(err => {
+                        console.error("Erro ao reproduzir áudio:", err);
+                        alert("Não foi possível reproduzir o áudio. Tente baixar o arquivo.");
+                    });
+            });
+        });
+
+        audioPlayer.addEventListener('ended', () => {
+            if (activePlayBtn) {
+                activePlayBtn.textContent = '▶️';
+                activePlayBtn = null;
+            }
         });
     </script>
 </body>
