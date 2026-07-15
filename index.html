@@ -590,6 +590,22 @@
                 text-overflow: clip;
             }
         }
+
+        @media (max-width: 600px) {
+            .audiobook-card {
+                flex-direction: column;
+                align-items: stretch;
+                gap: 1rem;
+            }
+            .audiobook-actions {
+                justify-content: flex-end;
+                border-top: 1px solid var(--border);
+                padding-top: 0.75rem;
+            }
+            html.dark-theme .audiobook-actions {
+                border-top-color: rgba(255, 255, 255, 0.05);
+            }
+        }
     </style>
 </head>
 <body>
