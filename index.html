@@ -1017,5 +1017,24 @@
             }
         });
     </script>
+
+    <!-- Firebase SDKs and Analytics -->
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-analytics.js";
+
+        const firebaseConfig = {
+            apiKey: "AIzaSyCInnUSp8NQ_PWwlvpLF5Mw9ueq3jDMFmE",
+            authDomain: "horizonte-7ec73.firebaseapp.com",
+            projectId: "horizonte-7ec73",
+            storageBucket: "horizonte-7ec73.firebasestorage.app",
+            messagingSenderId: "717322550690",
+            appId: "1:717322550690:web:6fd46dac1bb7184ab846fb",
+            measurementId: "G-KKRXB8BF6P"
+        };
+
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+    </script>
 </body>
 </html>
