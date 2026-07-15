@@ -1,0 +1,649 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE ncx PUBLIC "-//NISO//DTD ncx 2005-1//EN" "http://www.daisy.org/z3986/2005/ncx-2005-1.dtd">
+<ncx version="2005-1" xml:lang="en" xmlns="http://www.daisy.org/z3986/2005/ncx/">
+
+	<head>
+		<!-- The following four metadata items are required for all NCX documents,
+		including those conforming to the relaxed constraints of OPS 2.0 -->
+
+		<meta name="dtb:uid" content="https://pressbooks.bccampus.ca/teachinginadigitalagev2" /> <!-- same as in .opf -->
+		<meta name="dtb:depth" content="2"/> <!-- 1 or higher -->
+		<meta name="dtb:totalPageCount" content="0"/> <!-- must be 0 -->
+		<meta name="dtb:maxPageNumber" content="0"/> <!-- must be 0 -->
+	</head>
+
+	<docTitle>
+		<text>Teaching in a Digital Age &#8211; Second Edition</text>
+	</docTitle>
+
+		<docAuthor>
+		<text>A.W. (Tony) Bates</text>
+	</docAuthor>
+	
+	<navMap>
+		
+					<navPoint id="front-cover" playOrder="1">
+					<navLabel><text>Cover</text></navLabel>
+					<content src="OEBPS/front-cover.html" />
+					</navPoint>
+					<navPoint id="title-page" playOrder="2">
+					<navLabel><text>Title Page</text></navLabel>
+					<content src="OEBPS/title-page.html" />
+					</navPoint>
+					<navPoint id="copyright" playOrder="3">
+					<navLabel><text>Copyright</text></navLabel>
+					<content src="OEBPS/copyright.html" />
+					</navPoint>
+					<navPoint id="table-of-contents" playOrder="4">
+					<navLabel><text>Table Of Contents</text></navLabel>
+					<content src="OEBPS/table-of-contents.html" />
+					</navPoint>
+					<navPoint id="front-matter-001" playOrder="5">
+					<navLabel><text>Scenario A: A university professor addresses change</text></navLabel>
+					<content src="OEBPS/front-matter-001-scenario-a.html" />
+					</navPoint>
+					<navPoint id="front-matter-002" playOrder="6">
+					<navLabel><text>About the book – and how to use it</text></navLabel>
+					<content src="OEBPS/front-matter-002-introduction.html" />
+					</navPoint>
+					<navPoint id="front-matter-003" playOrder="7">
+					<navLabel><text>About the author</text></navLabel>
+					<content src="OEBPS/front-matter-003-about-the-author.html" />
+					</navPoint>
+					<navPoint id="front-matter-004" playOrder="8">
+					<navLabel><text>Other books by the author</text></navLabel>
+					<content src="OEBPS/front-matter-004-other-books-by-the-author.html" />
+					</navPoint>
+					<navPoint id="front-matter-005" playOrder="9">
+					<navLabel><text>Updates and revisions</text></navLabel>
+					<content src="OEBPS/front-matter-005-updates-and-revisions.html" />
+					</navPoint>
+					<navPoint id="part-001" playOrder="10">
+					<navLabel><text>Chapter 1: Fundamental Change in Education</text></navLabel>
+					<content src="OEBPS/part-001-chapter-1-fundamental-change-in-education.html" />
+					
+					<navPoint id="chapter-001" playOrder="11">
+					<navLabel><text>1.1 Structural changes in the economy: the growth of a knowledge society</text></navLabel>
+					<content src="OEBPS/chapter-001-structural-changes-in-the-economy-the-growth-of-a-knowledge-society.html" />
+					</navPoint>
+					<navPoint id="chapter-002" playOrder="12">
+					<navLabel><text>1.2 The skills needed in a digital age</text></navLabel>
+					<content src="OEBPS/chapter-002-section-1-3-the-skills-needed-in-a-digital-age.html" />
+					</navPoint>
+					<navPoint id="chapter-003" playOrder="13">
+					<navLabel><text>1.3 Should education be tied directly to the labour market?</text></navLabel>
+					<content src="OEBPS/chapter-003-section-1-4-should-post-secondary-education-be-tied-directly-to-the-labour-market.html" />
+					</navPoint>
+					<navPoint id="chapter-004" playOrder="14">
+					<navLabel><text>1.4 Change and continuity</text></navLabel>
+					<content src="OEBPS/chapter-004-section-1-1-the-nature-of-a-university-2.html" />
+					</navPoint>
+					<navPoint id="chapter-005" playOrder="15">
+					<navLabel><text>1.5 The impact of expansion on teaching methods</text></navLabel>
+					<content src="OEBPS/chapter-005-section-1-5-the-impact-of-expansion-on-teaching-methods.html" />
+					</navPoint>
+					<navPoint id="chapter-006" playOrder="16">
+					<navLabel><text>1.6 Changing students, changing markets for higher education</text></navLabel>
+					<content src="OEBPS/chapter-006-section-1-6-changing-students-changing-markets-for-higher-education.html" />
+					</navPoint>
+					<navPoint id="chapter-007" playOrder="17">
+					<navLabel><text>1.7 From the periphery to the center: how technology is changing the way we teach</text></navLabel>
+					<content src="OEBPS/chapter-007-section-1-7-from-the-periphery-to-the-center-how-technology-is-changing-the-way-we-teach-2.html" />
+					</navPoint>
+					<navPoint id="chapter-008" playOrder="18">
+					<navLabel><text>1.8 Navigating new developments in technology and online learning</text></navLabel>
+					<content src="OEBPS/chapter-008-section-1-8-navigating-new-developments-in-technology-and-online-learning.html" />
+					</navPoint></navPoint>
+					<navPoint id="part-002" playOrder="19">
+					<navLabel><text>Chapter 2: The nature of knowledge and the implications for teaching</text></navLabel>
+					<content src="OEBPS/part-002-chapter-2-the-nature-of-knowledge-and-the-implications-for-teaching.html" />
+					
+					<navPoint id="chapter-009" playOrder="20">
+					<navLabel><text>Scenario B: A pre-dinner party discussion</text></navLabel>
+					<content src="OEBPS/chapter-009-section-2-1-scenario-a-pre-dinner-party-discussion.html" />
+					</navPoint>
+					<navPoint id="chapter-010" playOrder="21">
+					<navLabel><text>2.1 Art, theory, research, and best practices in teaching</text></navLabel>
+					<content src="OEBPS/chapter-010-section-2-2-art-theory-research-and-best-practices-in-teaching.html" />
+					</navPoint>
+					<navPoint id="chapter-011" playOrder="22">
+					<navLabel><text>2.2 Epistemology and theories of learning</text></navLabel>
+					<content src="OEBPS/chapter-011-section-2-2-epistemology-and-why-its-important.html" />
+					</navPoint>
+					<navPoint id="chapter-012" playOrder="23">
+					<navLabel><text>2.3 Objectivism and behaviourism</text></navLabel>
+					<content src="OEBPS/chapter-012-section-3-2-behaviourism.html" />
+					</navPoint>
+					<navPoint id="chapter-013" playOrder="24">
+					<navLabel><text>2.4 Cognitivism</text></navLabel>
+					<content src="OEBPS/chapter-013-slug-3-3-cognitivism.html" />
+					</navPoint>
+					<navPoint id="chapter-014" playOrder="25">
+					<navLabel><text>2.5 Constructivism</text></navLabel>
+					<content src="OEBPS/chapter-014-section-3-4-constructivism.html" />
+					</navPoint>
+					<navPoint id="chapter-015" playOrder="26">
+					<navLabel><text>2.6 Connectivism</text></navLabel>
+					<content src="OEBPS/chapter-015-slug-3-6-connectivism.html" />
+					</navPoint>
+					<navPoint id="chapter-016" playOrder="27">
+					<navLabel><text>2.7 Is the nature of knowledge changing?</text></navLabel>
+					<content src="OEBPS/chapter-016-section-2-4-does-technology-change-the-nature-of-knowledge.html" />
+					</navPoint>
+					<navPoint id="chapter-017" playOrder="28">
+					<navLabel><text>2.8 Summary</text></navLabel>
+					<content src="OEBPS/chapter-017-section-3-7-conclusion.html" />
+					</navPoint></navPoint>
+					<navPoint id="part-003" playOrder="29">
+					<navLabel><text>Chapter 3: Methods of teaching: campus-focused</text></navLabel>
+					<content src="OEBPS/part-003-chapter-4-methods-of-teaching.html" />
+					
+					<navPoint id="chapter-018" playOrder="30">
+					<navLabel><text>Scenario C: A stats lecturer fights the system</text></navLabel>
+					<content src="OEBPS/chapter-018-scenario-a-stats-lecturer-fights-the-system.html" />
+					</navPoint>
+					<navPoint id="chapter-019" playOrder="31">
+					<navLabel><text>3.1 Five perspectives on teaching</text></navLabel>
+					<content src="OEBPS/chapter-019-section-4-1-five-perspectives-on-teaching.html" />
+					</navPoint>
+					<navPoint id="chapter-020" playOrder="32">
+					<navLabel><text>3.2 The origins of the classroom design model</text></navLabel>
+					<content src="OEBPS/chapter-020-slug-6-3-the-classroom-design-model.html" />
+					</navPoint>
+					<navPoint id="chapter-021" playOrder="33">
+					<navLabel><text>3.3 Transmissive lectures: learning by listening</text></navLabel>
+					<content src="OEBPS/chapter-021-slug-4-2-transmissive-lectures.html" />
+					</navPoint>
+					<navPoint id="chapter-022" playOrder="34">
+					<navLabel><text>3.4 Interactive lectures, seminars, and tutorials: learning by talking</text></navLabel>
+					<content src="OEBPS/chapter-022-slug-4-3-interactive-lectures-seminars-tutorials-and-moocs.html" />
+					</navPoint>
+					<navPoint id="chapter-023" playOrder="35">
+					<navLabel><text>3.5 Learning by doing: Experiential learning</text></navLabel>
+					<content src="OEBPS/chapter-023-slug-4-4-models-for-teaching-by-doing.html" />
+					</navPoint>
+					<navPoint id="chapter-024" playOrder="36">
+					<navLabel><text>3.6 Learning by doing: Apprenticeship</text></navLabel>
+					<content src="OEBPS/chapter-024-slug-3-5-apprenticeship-learning-by-doing-1.html" />
+					</navPoint>
+					<navPoint id="chapter-025" playOrder="37">
+					<navLabel><text>3.7 Learning by being: The nurturing and social reform models of teaching:</text></navLabel>
+					<content src="OEBPS/chapter-025-slug-4-5-the-nurturing-and-social-reform-models-of-teaching.html" />
+					</navPoint>
+					<navPoint id="chapter-026" playOrder="38">
+					<navLabel><text>3.8 Main conclusions</text></navLabel>
+					<content src="OEBPS/chapter-026-slug-4-6-main-conclusions.html" />
+					</navPoint></navPoint>
+					<navPoint id="part-004" playOrder="39">
+					<navLabel><text>Chapter 4: Methods of teaching with an online focus</text></navLabel>
+					<content src="OEBPS/part-004-chapter-6-models-for-designing-teaching-and-learning.html" />
+					
+					<navPoint id="chapter-027" playOrder="40">
+					<navLabel><text>Scenario D: Developing historical thinking</text></navLabel>
+					<content src="OEBPS/chapter-027-scenario-5-1-developing-historical-thinking.html" />
+					</navPoint>
+					<navPoint id="chapter-028" playOrder="41">
+					<navLabel><text>4.1 Online learning and teaching methods</text></navLabel>
+					<content src="OEBPS/chapter-028-slug-4-1-online-learning-and-teaching-methods.html" />
+					</navPoint>
+					<navPoint id="chapter-029" playOrder="42">
+					<navLabel><text>4.2 Old wine in new bottles: classroom-type online learning</text></navLabel>
+					<content src="OEBPS/chapter-029-slug-6-4-old-wine-in-new-bottles-classroom-type-online-learning.html" />
+					</navPoint>
+					<navPoint id="chapter-030" playOrder="43">
+					<navLabel><text>4.3 The ADDIE model</text></navLabel>
+					<content src="OEBPS/chapter-030-slug-6-5-the-addie-model.html" />
+					</navPoint>
+					<navPoint id="chapter-031" playOrder="44">
+					<navLabel><text>4.4 Online collaborative learning</text></navLabel>
+					<content src="OEBPS/chapter-031-slug-6-5-online-collaborative-learning.html" />
+					</navPoint>
+					<navPoint id="chapter-032" playOrder="45">
+					<navLabel><text>4.5 Competency-based learning</text></navLabel>
+					<content src="OEBPS/chapter-032-slug-6-6-competency-based-learning.html" />
+					</navPoint>
+					<navPoint id="chapter-033" playOrder="46">
+					<navLabel><text>4.6 Communities of practice</text></navLabel>
+					<content src="OEBPS/chapter-033-slug-6-7-experiential-learning.html" />
+					</navPoint>
+					<navPoint id="chapter-034" playOrder="47">
+					<navLabel><text>Scenario E: ETEC 522: Ventures in e-Learning</text></navLabel>
+					<content src="OEBPS/chapter-034-scenario-e-etec-522-ventures-in-e-learning.html" />
+					</navPoint>
+					<navPoint id="chapter-035" playOrder="48">
+					<navLabel><text>4.7 ‘Agile’ Design: flexible designs for learning</text></navLabel>
+					<content src="OEBPS/chapter-035-slug-6-10-agile-design-flexible-designs-for-learning.html" />
+					</navPoint>
+					<navPoint id="chapter-036" playOrder="49">
+					<navLabel><text>4.8 Making decisions about teaching methods</text></navLabel>
+					<content src="OEBPS/chapter-036-conclusions.html" />
+					</navPoint></navPoint>
+					<navPoint id="part-005" playOrder="50">
+					<navLabel><text>Chapter 5: MOOCs</text></navLabel>
+					<content src="OEBPS/part-005-chapter-7-moocs.html" />
+					
+					<navPoint id="chapter-037" playOrder="51">
+					<navLabel><text>5.1 Brief history</text></navLabel>
+					<content src="OEBPS/chapter-037-section-7-2.html" />
+					</navPoint>
+					<navPoint id="chapter-038" playOrder="52">
+					<navLabel><text>5.2 What is a MOOC?</text></navLabel>
+					<content src="OEBPS/chapter-038-section-7-1.html" />
+					</navPoint>
+					<navPoint id="chapter-039" playOrder="53">
+					<navLabel><text>5.3 A Taxonomy of MOOCs</text></navLabel>
+					<content src="OEBPS/chapter-039-section-7-4-design-models-for-moocs.html" />
+					</navPoint>
+					<navPoint id="chapter-040" playOrder="54">
+					<navLabel><text>5.4 Strengths and weaknesses of MOOCs</text></navLabel>
+					<content src="OEBPS/chapter-040-section-7-5-strengths-and-weaknesses-of-moocs.html" />
+					</navPoint>
+					<navPoint id="chapter-041" playOrder="55">
+					<navLabel><text>5.5 Political, social and economic drivers of MOOCs</text></navLabel>
+					<content src="OEBPS/chapter-041-section-7-6-political-social-and-economic-drivers-of-moocs.html" />
+					</navPoint>
+					<navPoint id="chapter-042" playOrder="56">
+					<navLabel><text>5.6 Why MOOCs are only part of the answer</text></navLabel>
+					<content src="OEBPS/chapter-042-section-7-6-why-moocs-are-only-part-of-the-answer.html" />
+					</navPoint>
+					<navPoint id="chapter-043" playOrder="57">
+					<navLabel><text>Scenario F: How to cope with being old</text></navLabel>
+					<content src="OEBPS/chapter-043-slug-7-7-references-on-moocs.html" />
+					</navPoint></navPoint>
+					<navPoint id="part-006" playOrder="58">
+					<navLabel><text>Chapter 6: Building an effective learning environment</text></navLabel>
+					<content src="OEBPS/part-006-chapter-5-building-an-effective-learning-environment.html" />
+					
+					<navPoint id="chapter-044" playOrder="59">
+					<navLabel><text>6.1 Integrating design principles within a rich learning environment</text></navLabel>
+					<content src="OEBPS/chapter-044-moving-from-theory-to-practice.html" />
+					</navPoint>
+					<navPoint id="chapter-045" playOrder="60">
+					<navLabel><text>6.2 What is a learning environment?</text></navLabel>
+					<content src="OEBPS/chapter-045-slug-5-2-what-is-a-learning-environment.html" />
+					</navPoint>
+					<navPoint id="chapter-046" playOrder="61">
+					<navLabel><text>6.3 Learner characteristics</text></navLabel>
+					<content src="OEBPS/chapter-046-slug-5-3-learner-characteristics.html" />
+					</navPoint>
+					<navPoint id="chapter-047" playOrder="62">
+					<navLabel><text>6.4 Managing content</text></navLabel>
+					<content src="OEBPS/chapter-047-slug-5-4-managing-content.html" />
+					</navPoint>
+					<navPoint id="chapter-048" playOrder="63">
+					<navLabel><text>6.5 Developing skills</text></navLabel>
+					<content src="OEBPS/chapter-048-slug-5-5-developing-skills.html" />
+					</navPoint>
+					<navPoint id="chapter-049" playOrder="64">
+					<navLabel><text>6.6 Learner support</text></navLabel>
+					<content src="OEBPS/chapter-049-slug-5-6-learner-support.html" />
+					</navPoint>
+					<navPoint id="chapter-050" playOrder="65">
+					<navLabel><text>6.7 Resources</text></navLabel>
+					<content src="OEBPS/chapter-050-slug-5-7-resources.html" />
+					</navPoint>
+					<navPoint id="chapter-051" playOrder="66">
+					<navLabel><text>6.8 Assessment of learning</text></navLabel>
+					<content src="OEBPS/chapter-051-slug-5-8-assessment-of-learning.html" />
+					</navPoint>
+					<navPoint id="chapter-052" playOrder="67">
+					<navLabel><text>6.9 Culture and learning environments</text></navLabel>
+					<content src="OEBPS/chapter-052-a-9-culture-and-learning-environments.html" />
+					</navPoint>
+					<navPoint id="chapter-053" playOrder="68">
+					<navLabel><text>6.10 Conclusions</text></navLabel>
+					<content src="OEBPS/chapter-053-slug-6-10-conclusions.html" />
+					</navPoint></navPoint>
+					<navPoint id="part-007" playOrder="69">
+					<navLabel><text>Chapter 7: Understanding technology in education</text></navLabel>
+					<content src="OEBPS/part-007-chapter-8-understanding-technology.html" />
+					
+					<navPoint id="chapter-054" playOrder="70">
+					<navLabel><text>7.1 Choosing technologies for teaching and learning: the challenge</text></navLabel>
+					<content src="OEBPS/chapter-054-section-8-2-chossing-technologies-for-teaching-and-learning-the-challenge.html" />
+					</navPoint>
+					<navPoint id="chapter-055" playOrder="71">
+					<navLabel><text>7.2 A short history of educational technology</text></navLabel>
+					<content src="OEBPS/chapter-055-section-8-1-a-short-history-of-educational-technology.html" />
+					</navPoint>
+					<navPoint id="chapter-056" playOrder="72">
+					<navLabel><text>7.3 Media or technology?</text></navLabel>
+					<content src="OEBPS/chapter-056-slug-8-6-media-or-technology.html" />
+					</navPoint>
+					<navPoint id="chapter-057" playOrder="73">
+					<navLabel><text>7.4 Assessing media affordances: the SAMR model</text></navLabel>
+					<content src="OEBPS/chapter-057-slug-7-4-assessing-media-affordances-the-samr-model.html" />
+					</navPoint>
+					<navPoint id="chapter-058" playOrder="74">
+					<navLabel><text>7.5 Broadcast vs communicative media</text></navLabel>
+					<content src="OEBPS/chapter-058-slug-8-3-broadcast-vs-communicative-technologies.html" />
+					</navPoint>
+					<navPoint id="chapter-059" playOrder="75">
+					<navLabel><text>7.6 The time and space dimensions of media</text></navLabel>
+					<content src="OEBPS/chapter-059-slug-8-4-synchronous-vs-asynchronous.html" />
+					</navPoint>
+					<navPoint id="chapter-060" playOrder="76">
+					<navLabel><text>7.7 Media richness</text></navLabel>
+					<content src="OEBPS/chapter-060-slug-8-7-media-richness.html" />
+					</navPoint>
+					<navPoint id="chapter-061" playOrder="77">
+					<navLabel><text>7.8 Understanding the foundations of educational media</text></navLabel>
+					<content src="OEBPS/chapter-061-slug-8-8-understanding-the-foundations-of-educational-media.html" />
+					</navPoint></navPoint>
+					<navPoint id="part-008" playOrder="78">
+					<navLabel><text>Chapter 8: Pedagogical differences between media</text></navLabel>
+					<content src="OEBPS/part-008-chapter-8-pedagogical-differences-between-media.html" />
+					
+					<navPoint id="chapter-062" playOrder="79">
+					<navLabel><text>8.1 Thinking about the pedagogical differences of media</text></navLabel>
+					<content src="OEBPS/chapter-062-slug-7-1-thinking-about-the-pedagogical-difference-sof-media.html" />
+					</navPoint>
+					<navPoint id="chapter-063" playOrder="80">
+					<navLabel><text>8.2 Text</text></navLabel>
+					<content src="OEBPS/chapter-063-slug-8-8-pedagogical-differences-between-media.html" />
+					</navPoint>
+					<navPoint id="chapter-064" playOrder="81">
+					<navLabel><text>8.3 Audio</text></navLabel>
+					<content src="OEBPS/chapter-064-slug-9-5-2-audio.html" />
+					</navPoint>
+					<navPoint id="chapter-065" playOrder="82">
+					<navLabel><text>8.4 Video</text></navLabel>
+					<content src="OEBPS/chapter-065-slug-9-5-3-video.html" />
+					</navPoint>
+					<navPoint id="chapter-066" playOrder="83">
+					<navLabel><text>8.5 Computing</text></navLabel>
+					<content src="OEBPS/chapter-066-computers-and-learning.html" />
+					</navPoint>
+					<navPoint id="chapter-067" playOrder="84">
+					<navLabel><text>8.6 Social media</text></navLabel>
+					<content src="OEBPS/chapter-067-slug-9-5-5-social-media.html" />
+					</navPoint>
+					<navPoint id="chapter-068" playOrder="85">
+					<navLabel><text>8.7.a Emerging technologies: serious games and gamification</text></navLabel>
+					<content src="OEBPS/chapter-068-slug-8-7-emerging-technologies.html" />
+					</navPoint>
+					<navPoint id="chapter-069" playOrder="86">
+					<navLabel><text>8.7.b. Emerging technologies: virtual and augmented reality</text></navLabel>
+					<content src="OEBPS/chapter-069-slug-8-7-2-emerging-technologies-virtual-augmented-mixed-reality.html" />
+					</navPoint>
+					<navPoint id="chapter-070" playOrder="87">
+					<navLabel><text>8.7c Emerging technologies: artificial intelligence</text></navLabel>
+					<content src="OEBPS/chapter-070-slug-8-7-c-artificial-intelligence.html" />
+					</navPoint>
+					<navPoint id="chapter-071" playOrder="88">
+					<navLabel><text>8.7.d Emerging technologies: conclusion and summary</text></navLabel>
+					<content src="OEBPS/chapter-071-slug-8-7-c-emerging-technologies-conclusion-and-summary.html" />
+					</navPoint>
+					<navPoint id="chapter-072" playOrder="89">
+					<navLabel><text>8.8 A framework for analysing the pedagogical characteristics of educational media</text></navLabel>
+					<content src="OEBPS/chapter-072-slug-7-7-a-framework-for-analysing-the-pedagogical-characteristics-of-educational-media.html" />
+					</navPoint></navPoint>
+					<navPoint id="part-009" playOrder="90">
+					<navLabel><text>Chapter 9: Choosing and using media in education: the SECTIONS model</text></navLabel>
+					<content src="OEBPS/part-009-slug-9-pedagogical-differences-between-media.html" />
+					
+					<navPoint id="chapter-073" playOrder="91">
+					<navLabel><text>9.1 Models for media selection</text></navLabel>
+					<content src="OEBPS/chapter-073-slug-9-1-models-for-media-selection.html" />
+					</navPoint>
+					<navPoint id="chapter-074" playOrder="92">
+					<navLabel><text>9.2 Students</text></navLabel>
+					<content src="OEBPS/chapter-074-slug-9-2-the-sections-model.html" />
+					</navPoint>
+					<navPoint id="chapter-075" playOrder="93">
+					<navLabel><text>9.3 Ease of Use</text></navLabel>
+					<content src="OEBPS/chapter-075-slug-9-3-the-sections-model-ease-of-use.html" />
+					</navPoint>
+					<navPoint id="chapter-076" playOrder="94">
+					<navLabel><text>9.4 Cost</text></navLabel>
+					<content src="OEBPS/chapter-076-slug-9-4-the-sections-model-cost.html" />
+					</navPoint>
+					<navPoint id="chapter-077" playOrder="95">
+					<navLabel><text>9.5 Teaching and media selection</text></navLabel>
+					<content src="OEBPS/chapter-077-slug-9-media-design-principles.html" />
+					</navPoint>
+					<navPoint id="chapter-078" playOrder="96">
+					<navLabel><text>9.6 Interaction</text></navLabel>
+					<content src="OEBPS/chapter-078-pedagogical-roles-for-text-audio-and-video.html" />
+					</navPoint>
+					<navPoint id="chapter-079" playOrder="97">
+					<navLabel><text>9.7 Organisational issues</text></navLabel>
+					<content src="OEBPS/chapter-079-slug-9-8-organizational-issues.html" />
+					</navPoint>
+					<navPoint id="chapter-080" playOrder="98">
+					<navLabel><text>9.8 Networking (and novelty)</text></navLabel>
+					<content src="OEBPS/chapter-080-slug-9-8-the-sections-model-networkingnovelty-and-speedsecurity.html" />
+					</navPoint>
+					<navPoint id="chapter-081" playOrder="99">
+					<navLabel><text>9.9 Security and privacy</text></navLabel>
+					<content src="OEBPS/chapter-081-slug-9-9-the-sections-model-speed-and-security.html" />
+					</navPoint>
+					<navPoint id="chapter-082" playOrder="100">
+					<navLabel><text>9.10 Deciding</text></navLabel>
+					<content src="OEBPS/chapter-082-models-for-choosing-media-and-technologies.html" />
+					</navPoint></navPoint>
+					<navPoint id="part-010" playOrder="101">
+					<navLabel><text>Chapter 10: Modes of delivery</text></navLabel>
+					<content src="OEBPS/part-010-chapter-10-modes-of-delivery.html" />
+					
+					<navPoint id="chapter-083" playOrder="102">
+					<navLabel><text>10.1 The continuum of technology-based learning</text></navLabel>
+					<content src="OEBPS/chapter-083-slug-10-2-the-continuum-of-technology-based-learning.html" />
+					</navPoint>
+					<navPoint id="chapter-084" playOrder="103">
+					<navLabel><text>10.2 Comparing modes of delivery</text></navLabel>
+					<content src="OEBPS/chapter-084-slug-10-3-comparing-delivery-methods.html" />
+					</navPoint>
+					<navPoint id="chapter-085" playOrder="104">
+					<navLabel><text>10.3 Which mode? Student needs</text></navLabel>
+					<content src="OEBPS/chapter-085-slug-10-3-2-which-mode.html" />
+					</navPoint>
+					<navPoint id="chapter-086" playOrder="105">
+					<navLabel><text>10.4 Choosing between face-to-face and online teaching on campus</text></navLabel>
+					<content src="OEBPS/chapter-086-slug-10-6-choosing-modes.html" />
+					</navPoint>
+					<navPoint id="chapter-087" playOrder="106">
+					<navLabel><text>10.5 The future of the campus</text></navLabel>
+					<content src="OEBPS/chapter-087-slug-10-5-which-mode-pedagogical-issues.html" />
+					</navPoint></navPoint>
+					<navPoint id="part-011" playOrder="107">
+					<navLabel><text>Chapter 11: Trends in open education</text></navLabel>
+					<content src="OEBPS/part-011-slug-10-trends-in-open-education.html" />
+					
+					<navPoint id="chapter-088" playOrder="108">
+					<navLabel><text>Scenario H: Watershed management</text></navLabel>
+					<content src="OEBPS/chapter-088-scenario-f-watershed-management.html" />
+					</navPoint>
+					<navPoint id="chapter-089" playOrder="109">
+					<navLabel><text>11.1 Open learning</text></navLabel>
+					<content src="OEBPS/chapter-089-slug-10-4-open-education.html" />
+					</navPoint>
+					<navPoint id="chapter-090" playOrder="110">
+					<navLabel><text>11.2 Open educational resources (OER)</text></navLabel>
+					<content src="OEBPS/chapter-090-oer.html" />
+					</navPoint>
+					<navPoint id="chapter-091" playOrder="111">
+					<navLabel><text>11.3 Open textbooks, open research and open data</text></navLabel>
+					<content src="OEBPS/chapter-091-slug-10-8-open-textbooks.html" />
+					</navPoint>
+					<navPoint id="chapter-092" playOrder="112">
+					<navLabel><text>11.4 Open pedagogy</text></navLabel>
+					<content src="OEBPS/chapter-092-slug-11-4-open-pedagogy.html" />
+					</navPoint>
+					<navPoint id="chapter-093" playOrder="113">
+					<navLabel><text>11.5 The implications of ‘open’ for course and program design: towards a paradigm shift?</text></navLabel>
+					<content src="OEBPS/chapter-093-slug-10-10-the-implications-of-open-for-course-and-program-design.html" />
+					</navPoint></navPoint>
+					<navPoint id="part-012" playOrder="114">
+					<navLabel><text>Chapter 12: Ensuring quality teaching in a digital age</text></navLabel>
+					<content src="OEBPS/part-012-ensuring-quality-teaching-in-a-digital-age.html" />
+					
+					<navPoint id="chapter-094" playOrder="115">
+					<navLabel><text>12.1 What do we mean by quality when teaching in a digital age?</text></navLabel>
+					<content src="OEBPS/chapter-094-slug-11-1-what-do-we-mean-by-quality-when-teaching-in-a-digital-age.html" />
+					</navPoint>
+					<navPoint id="chapter-095" playOrder="116">
+					<navLabel><text>12.2 Nine steps to quality teaching in a digital age</text></navLabel>
+					<content src="OEBPS/chapter-095-slug-11-2-nine-steps-to-quality-teaching-in-a-digital-age.html" />
+					</navPoint>
+					<navPoint id="chapter-096" playOrder="117">
+					<navLabel><text>12.3 Step One: Decide how you want to teach</text></navLabel>
+					<content src="OEBPS/chapter-096-slug-11-3-step-one-decide-how-you-want-to-teach.html" />
+					</navPoint>
+					<navPoint id="chapter-097" playOrder="118">
+					<navLabel><text>12.4 Step two: what kind of course or program?</text></navLabel>
+					<content src="OEBPS/chapter-097-slug-11-4-what-kind-of-course-or-program.html" />
+					</navPoint>
+					<navPoint id="chapter-098" playOrder="119">
+					<navLabel><text>12.5 Step three: work in a team</text></navLabel>
+					<content src="OEBPS/chapter-098-slug-11-5-step-three.html" />
+					</navPoint>
+					<navPoint id="chapter-099" playOrder="120">
+					<navLabel><text>12.6 Step four: build on existing resources</text></navLabel>
+					<content src="OEBPS/chapter-099-slug-11-6-build-on-existing-resources.html" />
+					</navPoint>
+					<navPoint id="chapter-100" playOrder="121">
+					<navLabel><text>12.7 Step five: master the technology</text></navLabel>
+					<content src="OEBPS/chapter-100-slug-11-7-step-five-master-the-technology.html" />
+					</navPoint>
+					<navPoint id="chapter-101" playOrder="122">
+					<navLabel><text>12.8 Step six: set appropriate learning goals</text></navLabel>
+					<content src="OEBPS/chapter-101-slug-11-8-step-six-set-appropriate-learning-goals.html" />
+					</navPoint>
+					<navPoint id="chapter-102" playOrder="123">
+					<navLabel><text>12.9 Step seven: design course structure and learning activities</text></navLabel>
+					<content src="OEBPS/chapter-102-slug-11-9-step-seven.html" />
+					</navPoint>
+					<navPoint id="chapter-103" playOrder="124">
+					<navLabel><text>12.10 Step eight: communicate, communicate, communicate</text></navLabel>
+					<content src="OEBPS/chapter-103-slug-11-10-step-eight-communicate-communicate-communicate.html" />
+					</navPoint>
+					<navPoint id="chapter-104" playOrder="125">
+					<navLabel><text>12.11 Step nine: evaluate and innovate</text></navLabel>
+					<content src="OEBPS/chapter-104-slug-11-step-nine-evaluate-and-innovate.html" />
+					</navPoint>
+					<navPoint id="chapter-105" playOrder="126">
+					<navLabel><text>12.12  Building a strong foundation of course design</text></navLabel>
+					<content src="OEBPS/chapter-105-slug-11-12-building-a-strong-foundation.html" />
+					</navPoint></navPoint>
+					<navPoint id="part-013" playOrder="127">
+					<navLabel><text>Chapter 13: Supporting teachers and instructors in a digital age</text></navLabel>
+					<content src="OEBPS/part-013-chapter-12-supporting-teachers-and-instructors-in-a-digital-age.html" />
+					
+					<navPoint id="chapter-106" playOrder="128">
+					<navLabel><text>13.1 Are you a super-hero?</text></navLabel>
+					<content src="OEBPS/chapter-106-slug-12-1-unreaistic-expectations-for-teachers-and-instructors.html" />
+					</navPoint>
+					<navPoint id="chapter-107" playOrder="129">
+					<navLabel><text>13.2 The development and training of teachers and instructors in a digital age</text></navLabel>
+					<content src="OEBPS/chapter-107-slug-12-3-faculty-development-and-training.html" />
+					</navPoint>
+					<navPoint id="chapter-108" playOrder="130">
+					<navLabel><text>13.3 Learning technology support</text></navLabel>
+					<content src="OEBPS/chapter-108-slug-12-4-learning-technology-support.html" />
+					</navPoint>
+					<navPoint id="chapter-109" playOrder="131">
+					<navLabel><text>13.4 Conditions of employment</text></navLabel>
+					<content src="OEBPS/chapter-109-slug-12-5-conditions-of-exployment.html" />
+					</navPoint>
+					<navPoint id="chapter-110" playOrder="132">
+					<navLabel><text>13.5 Team teaching</text></navLabel>
+					<content src="OEBPS/chapter-110-slug-12-6-team-teaching.html" />
+					</navPoint>
+					<navPoint id="chapter-111" playOrder="133">
+					<navLabel><text>13.6 An institutional strategy for teaching in a digital age</text></navLabel>
+					<content src="OEBPS/chapter-111-slug-12-2-an-institutional-strategy-for-teaching-in-a-digital-age.html" />
+					</navPoint>
+					<navPoint id="chapter-112" playOrder="134">
+					<navLabel><text>13.7 Building the future</text></navLabel>
+					<content src="OEBPS/chapter-112-slug-12-7.html" />
+					</navPoint>
+					<navPoint id="chapter-113" playOrder="135">
+					<navLabel><text>Scenario I: Stopping the flu</text></navLabel>
+					<content src="OEBPS/chapter-113-scenario-g.html" />
+					</navPoint></navPoint>
+					<navPoint id="part-014" playOrder="136">
+					<navLabel><text>Appendix 1: Questions to guide media selection and use</text></navLabel>
+					<content src="OEBPS/part-014-appendix-2-questions-to-guide-media-selection-and-use.html" />
+					
+					<navPoint id="chapter-114" playOrder="137">
+					<navLabel><text>S: Who are your students?</text></navLabel>
+					<content src="OEBPS/chapter-114-s-who-are-your-students.html" />
+					</navPoint>
+					<navPoint id="chapter-115" playOrder="138">
+					<navLabel><text>E: Ease of use</text></navLabel>
+					<content src="OEBPS/chapter-115-e-ease-of-use.html" />
+					</navPoint>
+					<navPoint id="chapter-116" playOrder="139">
+					<navLabel><text>C: What is the cost in money and time?</text></navLabel>
+					<content src="OEBPS/chapter-116-c-what-is-the-cost-in-money-and-time.html" />
+					</navPoint>
+					<navPoint id="chapter-117" playOrder="140">
+					<navLabel><text>T: Teaching and other pedagogical factors</text></navLabel>
+					<content src="OEBPS/chapter-117-t-teaching-and-other-pedagogical-factors.html" />
+					</navPoint>
+					<navPoint id="chapter-118" playOrder="141">
+					<navLabel><text>I: Interaction</text></navLabel>
+					<content src="OEBPS/chapter-118-i-interaction.html" />
+					</navPoint>
+					<navPoint id="chapter-119" playOrder="142">
+					<navLabel><text>O: Organisational issues</text></navLabel>
+					<content src="OEBPS/chapter-119-o-organisational-issues.html" />
+					</navPoint>
+					<navPoint id="chapter-120" playOrder="143">
+					<navLabel><text>N: Networking</text></navLabel>
+					<content src="OEBPS/chapter-120-n-networking.html" />
+					</navPoint>
+					<navPoint id="chapter-121" playOrder="144">
+					<navLabel><text>S: Security and privacy</text></navLabel>
+					<content src="OEBPS/chapter-121-s-security-and-privacy.html" />
+					</navPoint></navPoint>
+					<navPoint id="part-015" playOrder="145">
+					<navLabel><text>Appendix 2 Online learning quality standards, organisations and research</text></navLabel>
+					<content src="OEBPS/part-015-appendix-3-online-learning-quality-standards-organisations-and-research.html" />
+					</navPoint>
+					<navPoint id="part-016" playOrder="146">
+					<navLabel><text>Appendix 3: Independent reviews</text></navLabel>
+					<content src="OEBPS/part-016-appendix-2-independent-commissioned-reviews.html" />
+					
+					<navPoint id="chapter-122" playOrder="147">
+					<navLabel><text>A review from a faculty perspective: Professor James Mitchell</text></navLabel>
+					<content src="OEBPS/chapter-122-a-review-from-a-faculty-perspective.html" />
+					</navPoint>
+					<navPoint id="chapter-123" playOrder="148">
+					<navLabel><text>A review from an open and distance education perspective: Sir John Daniel</text></navLabel>
+					<content src="OEBPS/chapter-123-a-review-from-an-open-and-distance-education-perspective.html" />
+					</navPoint>
+					<navPoint id="chapter-124" playOrder="149">
+					<navLabel><text>A review from a digital education perspective: Digital Education Strategies, Ryerson University</text></navLabel>
+					<content src="OEBPS/chapter-124-a-review-from-a-digital-education-perspective.html" />
+					</navPoint>
+					<navPoint id="chapter-125" playOrder="150">
+					<navLabel><text>MERLOT II Peer Review</text></navLabel>
+					<content src="OEBPS/chapter-125-merlot-ii-peer-review.html" />
+					</navPoint></navPoint>
+					<navPoint id="part-017" playOrder="151">
+					<navLabel><text>Feedback on Activities</text></navLabel>
+					<content src="OEBPS/part-017-feedback-on-activities.html" />
+					
+					<navPoint id="chapter-126" playOrder="152">
+					<navLabel><text>Appendix 4: Feedback on Activity 1.8 Main conclusions from Chapter 1</text></navLabel>
+					<content src="OEBPS/chapter-126-feedback-on-activity-1-4.html" />
+					</navPoint>
+					<navPoint id="chapter-127" playOrder="153">
+					<navLabel><text>Appendix 4: Feedback on Activity 7.1  How many technologies can you see in Figure 7.1?</text></navLabel>
+					<content src="OEBPS/chapter-127-activity-8-1-how-many-technologies-can-you-see-in-figure-8-1.html" />
+					</navPoint>
+					<navPoint id="chapter-128" playOrder="154">
+					<navLabel><text>Appendix 4: Feedback on Activity 7.5 Broadcast or communicative</text></navLabel>
+					<content src="OEBPS/chapter-128-activity-8-4-broadcast-or-communicative.html" />
+					</navPoint></navPoint>
+					<navPoint id="back-matter-001" playOrder="155">
+					<navLabel><text>Bibliography</text></navLabel>
+					<content src="OEBPS/back-matter-001-bibliography-2.html" />
+					</navPoint>
+					<navPoint id="back-matter-002" playOrder="156">
+					<navLabel><text>Index</text></navLabel>
+					<content src="OEBPS/back-matter-002-index.html" />
+					</navPoint>	</navMap>
+</ncx>

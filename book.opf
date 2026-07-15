@@ -1,0 +1,548 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<package version="2.0" xmlns="http://www.idpf.org/2007/opf" unique-identifier="PrimaryID">
+
+
+	<metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:opf="http://www.idpf.org/2007/opf">
+		<dc:title>Teaching in a Digital Age - Second Edition</dc:title>
+<dc:language>en</dc:language>
+<dc:identifier id="PrimaryID" opf:scheme="URI">https://pressbooks.bccampus.ca/teachinginadigitalagev2</dc:identifier>
+<dc:description>The book examines the underlying principles that guide effective teaching in an age when all of us, and in particular the students we are teaching, are using technology.  A framework for making decisions about your teaching is provided, while understanding that every subject is different, and every instructor has something unique and special to bring to their teaching. The book enables teachers and instructors to help students develop the knowledge and skills they will need in a digital age: not so much the IT skills, but the thinking and attitudes to learning that will bring them success. Book release date (final version): October 10, 2019. For subsequent updates, see Updates and Revisions in the front matter of the book.</dc:description>
+<dc:creator opf:role="aut" opf:file-as="Bates, A.W.">A.W. (Tony) Bates</dc:creator>
+<dc:contributor opf:role="aut">A.W. (Tony) Bates</dc:contributor>
+<dc:rights>Copyright &#169; 2019 by Anthony William (Tony) Bates. Teaching in a Digital Age - Second Edition by Anthony William (Tony) Bates is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License, except where otherwise noted.</dc:rights>
+<dc:publisher>Tony Bates Associates Ltd.</dc:publisher>
+<dc:date opf:event="publication">2019-10-10</dc:date>
+<meta name="cover" content="cover-image" />
+	</metadata>
+
+
+	<manifest>
+		<item id="front-cover" href="OEBPS/front-cover.html" media-type="application/xhtml+xml" />
+<item id="title-page" href="OEBPS/title-page.html" media-type="application/xhtml+xml" />
+<item id="copyright" href="OEBPS/copyright.html" media-type="application/xhtml+xml" />
+<item id="table-of-contents" href="OEBPS/table-of-contents.html" media-type="application/xhtml+xml" />
+<item id="front-matter-001" href="OEBPS/front-matter-001-scenario-a.html" media-type="application/xhtml+xml" />
+<item id="front-matter-002" href="OEBPS/front-matter-002-introduction.html" media-type="application/xhtml+xml" />
+<item id="front-matter-003" href="OEBPS/front-matter-003-about-the-author.html" media-type="application/xhtml+xml" />
+<item id="front-matter-004" href="OEBPS/front-matter-004-other-books-by-the-author.html" media-type="application/xhtml+xml" />
+<item id="front-matter-005" href="OEBPS/front-matter-005-updates-and-revisions.html" media-type="application/xhtml+xml" />
+<item id="part-001" href="OEBPS/part-001-chapter-1-fundamental-change-in-education.html" media-type="application/xhtml+xml" />
+<item id="chapter-001" href="OEBPS/chapter-001-structural-changes-in-the-economy-the-growth-of-a-knowledge-society.html" media-type="application/xhtml+xml" />
+<item id="chapter-002" href="OEBPS/chapter-002-section-1-3-the-skills-needed-in-a-digital-age.html" media-type="application/xhtml+xml" />
+<item id="chapter-003" href="OEBPS/chapter-003-section-1-4-should-post-secondary-education-be-tied-directly-to-the-labour-market.html" media-type="application/xhtml+xml" />
+<item id="chapter-004" href="OEBPS/chapter-004-section-1-1-the-nature-of-a-university-2.html" media-type="application/xhtml+xml" />
+<item id="chapter-005" href="OEBPS/chapter-005-section-1-5-the-impact-of-expansion-on-teaching-methods.html" media-type="application/xhtml+xml" />
+<item id="chapter-006" href="OEBPS/chapter-006-section-1-6-changing-students-changing-markets-for-higher-education.html" media-type="application/xhtml+xml" />
+<item id="chapter-007" href="OEBPS/chapter-007-section-1-7-from-the-periphery-to-the-center-how-technology-is-changing-the-way-we-teach-2.html" media-type="application/xhtml+xml" />
+<item id="chapter-008" href="OEBPS/chapter-008-section-1-8-navigating-new-developments-in-technology-and-online-learning.html" media-type="application/xhtml+xml" />
+<item id="part-002" href="OEBPS/part-002-chapter-2-the-nature-of-knowledge-and-the-implications-for-teaching.html" media-type="application/xhtml+xml" />
+<item id="chapter-009" href="OEBPS/chapter-009-section-2-1-scenario-a-pre-dinner-party-discussion.html" media-type="application/xhtml+xml" />
+<item id="chapter-010" href="OEBPS/chapter-010-section-2-2-art-theory-research-and-best-practices-in-teaching.html" media-type="application/xhtml+xml" />
+<item id="chapter-011" href="OEBPS/chapter-011-section-2-2-epistemology-and-why-its-important.html" media-type="application/xhtml+xml" />
+<item id="chapter-012" href="OEBPS/chapter-012-section-3-2-behaviourism.html" media-type="application/xhtml+xml" />
+<item id="chapter-013" href="OEBPS/chapter-013-slug-3-3-cognitivism.html" media-type="application/xhtml+xml" />
+<item id="chapter-014" href="OEBPS/chapter-014-section-3-4-constructivism.html" media-type="application/xhtml+xml" />
+<item id="chapter-015" href="OEBPS/chapter-015-slug-3-6-connectivism.html" media-type="application/xhtml+xml" />
+<item id="chapter-016" href="OEBPS/chapter-016-section-2-4-does-technology-change-the-nature-of-knowledge.html" media-type="application/xhtml+xml" />
+<item id="chapter-017" href="OEBPS/chapter-017-section-3-7-conclusion.html" media-type="application/xhtml+xml" />
+<item id="part-003" href="OEBPS/part-003-chapter-4-methods-of-teaching.html" media-type="application/xhtml+xml" />
+<item id="chapter-018" href="OEBPS/chapter-018-scenario-a-stats-lecturer-fights-the-system.html" media-type="application/xhtml+xml" />
+<item id="chapter-019" href="OEBPS/chapter-019-section-4-1-five-perspectives-on-teaching.html" media-type="application/xhtml+xml" />
+<item id="chapter-020" href="OEBPS/chapter-020-slug-6-3-the-classroom-design-model.html" media-type="application/xhtml+xml" />
+<item id="chapter-021" href="OEBPS/chapter-021-slug-4-2-transmissive-lectures.html" media-type="application/xhtml+xml" />
+<item id="chapter-022" href="OEBPS/chapter-022-slug-4-3-interactive-lectures-seminars-tutorials-and-moocs.html" media-type="application/xhtml+xml" />
+<item id="chapter-023" href="OEBPS/chapter-023-slug-4-4-models-for-teaching-by-doing.html" media-type="application/xhtml+xml" />
+<item id="chapter-024" href="OEBPS/chapter-024-slug-3-5-apprenticeship-learning-by-doing-1.html" media-type="application/xhtml+xml" />
+<item id="chapter-025" href="OEBPS/chapter-025-slug-4-5-the-nurturing-and-social-reform-models-of-teaching.html" media-type="application/xhtml+xml" />
+<item id="chapter-026" href="OEBPS/chapter-026-slug-4-6-main-conclusions.html" media-type="application/xhtml+xml" />
+<item id="part-004" href="OEBPS/part-004-chapter-6-models-for-designing-teaching-and-learning.html" media-type="application/xhtml+xml" />
+<item id="chapter-027" href="OEBPS/chapter-027-scenario-5-1-developing-historical-thinking.html" media-type="application/xhtml+xml" />
+<item id="chapter-028" href="OEBPS/chapter-028-slug-4-1-online-learning-and-teaching-methods.html" media-type="application/xhtml+xml" />
+<item id="chapter-029" href="OEBPS/chapter-029-slug-6-4-old-wine-in-new-bottles-classroom-type-online-learning.html" media-type="application/xhtml+xml" />
+<item id="chapter-030" href="OEBPS/chapter-030-slug-6-5-the-addie-model.html" media-type="application/xhtml+xml" />
+<item id="chapter-031" href="OEBPS/chapter-031-slug-6-5-online-collaborative-learning.html" media-type="application/xhtml+xml" />
+<item id="chapter-032" href="OEBPS/chapter-032-slug-6-6-competency-based-learning.html" media-type="application/xhtml+xml" />
+<item id="chapter-033" href="OEBPS/chapter-033-slug-6-7-experiential-learning.html" media-type="application/xhtml+xml" />
+<item id="chapter-034" href="OEBPS/chapter-034-scenario-e-etec-522-ventures-in-e-learning.html" media-type="application/xhtml+xml" />
+<item id="chapter-035" href="OEBPS/chapter-035-slug-6-10-agile-design-flexible-designs-for-learning.html" media-type="application/xhtml+xml" />
+<item id="chapter-036" href="OEBPS/chapter-036-conclusions.html" media-type="application/xhtml+xml" />
+<item id="part-005" href="OEBPS/part-005-chapter-7-moocs.html" media-type="application/xhtml+xml" />
+<item id="chapter-037" href="OEBPS/chapter-037-section-7-2.html" media-type="application/xhtml+xml" />
+<item id="chapter-038" href="OEBPS/chapter-038-section-7-1.html" media-type="application/xhtml+xml" />
+<item id="chapter-039" href="OEBPS/chapter-039-section-7-4-design-models-for-moocs.html" media-type="application/xhtml+xml" />
+<item id="chapter-040" href="OEBPS/chapter-040-section-7-5-strengths-and-weaknesses-of-moocs.html" media-type="application/xhtml+xml" />
+<item id="chapter-041" href="OEBPS/chapter-041-section-7-6-political-social-and-economic-drivers-of-moocs.html" media-type="application/xhtml+xml" />
+<item id="chapter-042" href="OEBPS/chapter-042-section-7-6-why-moocs-are-only-part-of-the-answer.html" media-type="application/xhtml+xml" />
+<item id="chapter-043" href="OEBPS/chapter-043-slug-7-7-references-on-moocs.html" media-type="application/xhtml+xml" />
+<item id="part-006" href="OEBPS/part-006-chapter-5-building-an-effective-learning-environment.html" media-type="application/xhtml+xml" />
+<item id="chapter-044" href="OEBPS/chapter-044-moving-from-theory-to-practice.html" media-type="application/xhtml+xml" />
+<item id="chapter-045" href="OEBPS/chapter-045-slug-5-2-what-is-a-learning-environment.html" media-type="application/xhtml+xml" />
+<item id="chapter-046" href="OEBPS/chapter-046-slug-5-3-learner-characteristics.html" media-type="application/xhtml+xml" />
+<item id="chapter-047" href="OEBPS/chapter-047-slug-5-4-managing-content.html" media-type="application/xhtml+xml" />
+<item id="chapter-048" href="OEBPS/chapter-048-slug-5-5-developing-skills.html" media-type="application/xhtml+xml" />
+<item id="chapter-049" href="OEBPS/chapter-049-slug-5-6-learner-support.html" media-type="application/xhtml+xml" />
+<item id="chapter-050" href="OEBPS/chapter-050-slug-5-7-resources.html" media-type="application/xhtml+xml" />
+<item id="chapter-051" href="OEBPS/chapter-051-slug-5-8-assessment-of-learning.html" media-type="application/xhtml+xml" />
+<item id="chapter-052" href="OEBPS/chapter-052-a-9-culture-and-learning-environments.html" media-type="application/xhtml+xml" />
+<item id="chapter-053" href="OEBPS/chapter-053-slug-6-10-conclusions.html" media-type="application/xhtml+xml" />
+<item id="part-007" href="OEBPS/part-007-chapter-8-understanding-technology.html" media-type="application/xhtml+xml" />
+<item id="chapter-054" href="OEBPS/chapter-054-section-8-2-chossing-technologies-for-teaching-and-learning-the-challenge.html" media-type="application/xhtml+xml" />
+<item id="chapter-055" href="OEBPS/chapter-055-section-8-1-a-short-history-of-educational-technology.html" media-type="application/xhtml+xml" />
+<item id="chapter-056" href="OEBPS/chapter-056-slug-8-6-media-or-technology.html" media-type="application/xhtml+xml" />
+<item id="chapter-057" href="OEBPS/chapter-057-slug-7-4-assessing-media-affordances-the-samr-model.html" media-type="application/xhtml+xml" />
+<item id="chapter-058" href="OEBPS/chapter-058-slug-8-3-broadcast-vs-communicative-technologies.html" media-type="application/xhtml+xml" />
+<item id="chapter-059" href="OEBPS/chapter-059-slug-8-4-synchronous-vs-asynchronous.html" media-type="application/xhtml+xml" />
+<item id="chapter-060" href="OEBPS/chapter-060-slug-8-7-media-richness.html" media-type="application/xhtml+xml" />
+<item id="chapter-061" href="OEBPS/chapter-061-slug-8-8-understanding-the-foundations-of-educational-media.html" media-type="application/xhtml+xml" />
+<item id="part-008" href="OEBPS/part-008-chapter-8-pedagogical-differences-between-media.html" media-type="application/xhtml+xml" />
+<item id="chapter-062" href="OEBPS/chapter-062-slug-7-1-thinking-about-the-pedagogical-difference-sof-media.html" media-type="application/xhtml+xml" />
+<item id="chapter-063" href="OEBPS/chapter-063-slug-8-8-pedagogical-differences-between-media.html" media-type="application/xhtml+xml" />
+<item id="chapter-064" href="OEBPS/chapter-064-slug-9-5-2-audio.html" media-type="application/xhtml+xml" />
+<item id="chapter-065" href="OEBPS/chapter-065-slug-9-5-3-video.html" media-type="application/xhtml+xml" />
+<item id="chapter-066" href="OEBPS/chapter-066-computers-and-learning.html" media-type="application/xhtml+xml" />
+<item id="chapter-067" href="OEBPS/chapter-067-slug-9-5-5-social-media.html" media-type="application/xhtml+xml" />
+<item id="chapter-068" href="OEBPS/chapter-068-slug-8-7-emerging-technologies.html" media-type="application/xhtml+xml" />
+<item id="chapter-069" href="OEBPS/chapter-069-slug-8-7-2-emerging-technologies-virtual-augmented-mixed-reality.html" media-type="application/xhtml+xml" />
+<item id="chapter-070" href="OEBPS/chapter-070-slug-8-7-c-artificial-intelligence.html" media-type="application/xhtml+xml" />
+<item id="chapter-071" href="OEBPS/chapter-071-slug-8-7-c-emerging-technologies-conclusion-and-summary.html" media-type="application/xhtml+xml" />
+<item id="chapter-072" href="OEBPS/chapter-072-slug-7-7-a-framework-for-analysing-the-pedagogical-characteristics-of-educational-media.html" media-type="application/xhtml+xml" />
+<item id="part-009" href="OEBPS/part-009-slug-9-pedagogical-differences-between-media.html" media-type="application/xhtml+xml" />
+<item id="chapter-073" href="OEBPS/chapter-073-slug-9-1-models-for-media-selection.html" media-type="application/xhtml+xml" />
+<item id="chapter-074" href="OEBPS/chapter-074-slug-9-2-the-sections-model.html" media-type="application/xhtml+xml" />
+<item id="chapter-075" href="OEBPS/chapter-075-slug-9-3-the-sections-model-ease-of-use.html" media-type="application/xhtml+xml" />
+<item id="chapter-076" href="OEBPS/chapter-076-slug-9-4-the-sections-model-cost.html" media-type="application/xhtml+xml" />
+<item id="chapter-077" href="OEBPS/chapter-077-slug-9-media-design-principles.html" media-type="application/xhtml+xml" />
+<item id="chapter-078" href="OEBPS/chapter-078-pedagogical-roles-for-text-audio-and-video.html" media-type="application/xhtml+xml" />
+<item id="chapter-079" href="OEBPS/chapter-079-slug-9-8-organizational-issues.html" media-type="application/xhtml+xml" />
+<item id="chapter-080" href="OEBPS/chapter-080-slug-9-8-the-sections-model-networkingnovelty-and-speedsecurity.html" media-type="application/xhtml+xml" />
+<item id="chapter-081" href="OEBPS/chapter-081-slug-9-9-the-sections-model-speed-and-security.html" media-type="application/xhtml+xml" />
+<item id="chapter-082" href="OEBPS/chapter-082-models-for-choosing-media-and-technologies.html" media-type="application/xhtml+xml" />
+<item id="part-010" href="OEBPS/part-010-chapter-10-modes-of-delivery.html" media-type="application/xhtml+xml" />
+<item id="chapter-083" href="OEBPS/chapter-083-slug-10-2-the-continuum-of-technology-based-learning.html" media-type="application/xhtml+xml" />
+<item id="chapter-084" href="OEBPS/chapter-084-slug-10-3-comparing-delivery-methods.html" media-type="application/xhtml+xml" />
+<item id="chapter-085" href="OEBPS/chapter-085-slug-10-3-2-which-mode.html" media-type="application/xhtml+xml" />
+<item id="chapter-086" href="OEBPS/chapter-086-slug-10-6-choosing-modes.html" media-type="application/xhtml+xml" />
+<item id="chapter-087" href="OEBPS/chapter-087-slug-10-5-which-mode-pedagogical-issues.html" media-type="application/xhtml+xml" />
+<item id="part-011" href="OEBPS/part-011-slug-10-trends-in-open-education.html" media-type="application/xhtml+xml" />
+<item id="chapter-088" href="OEBPS/chapter-088-scenario-f-watershed-management.html" media-type="application/xhtml+xml" />
+<item id="chapter-089" href="OEBPS/chapter-089-slug-10-4-open-education.html" media-type="application/xhtml+xml" />
+<item id="chapter-090" href="OEBPS/chapter-090-oer.html" media-type="application/xhtml+xml" />
+<item id="chapter-091" href="OEBPS/chapter-091-slug-10-8-open-textbooks.html" media-type="application/xhtml+xml" />
+<item id="chapter-092" href="OEBPS/chapter-092-slug-11-4-open-pedagogy.html" media-type="application/xhtml+xml" />
+<item id="chapter-093" href="OEBPS/chapter-093-slug-10-10-the-implications-of-open-for-course-and-program-design.html" media-type="application/xhtml+xml" />
+<item id="part-012" href="OEBPS/part-012-ensuring-quality-teaching-in-a-digital-age.html" media-type="application/xhtml+xml" />
+<item id="chapter-094" href="OEBPS/chapter-094-slug-11-1-what-do-we-mean-by-quality-when-teaching-in-a-digital-age.html" media-type="application/xhtml+xml" />
+<item id="chapter-095" href="OEBPS/chapter-095-slug-11-2-nine-steps-to-quality-teaching-in-a-digital-age.html" media-type="application/xhtml+xml" />
+<item id="chapter-096" href="OEBPS/chapter-096-slug-11-3-step-one-decide-how-you-want-to-teach.html" media-type="application/xhtml+xml" />
+<item id="chapter-097" href="OEBPS/chapter-097-slug-11-4-what-kind-of-course-or-program.html" media-type="application/xhtml+xml" />
+<item id="chapter-098" href="OEBPS/chapter-098-slug-11-5-step-three.html" media-type="application/xhtml+xml" />
+<item id="chapter-099" href="OEBPS/chapter-099-slug-11-6-build-on-existing-resources.html" media-type="application/xhtml+xml" />
+<item id="chapter-100" href="OEBPS/chapter-100-slug-11-7-step-five-master-the-technology.html" media-type="application/xhtml+xml" />
+<item id="chapter-101" href="OEBPS/chapter-101-slug-11-8-step-six-set-appropriate-learning-goals.html" media-type="application/xhtml+xml" />
+<item id="chapter-102" href="OEBPS/chapter-102-slug-11-9-step-seven.html" media-type="application/xhtml+xml" />
+<item id="chapter-103" href="OEBPS/chapter-103-slug-11-10-step-eight-communicate-communicate-communicate.html" media-type="application/xhtml+xml" />
+<item id="chapter-104" href="OEBPS/chapter-104-slug-11-step-nine-evaluate-and-innovate.html" media-type="application/xhtml+xml" />
+<item id="chapter-105" href="OEBPS/chapter-105-slug-11-12-building-a-strong-foundation.html" media-type="application/xhtml+xml" />
+<item id="part-013" href="OEBPS/part-013-chapter-12-supporting-teachers-and-instructors-in-a-digital-age.html" media-type="application/xhtml+xml" />
+<item id="chapter-106" href="OEBPS/chapter-106-slug-12-1-unreaistic-expectations-for-teachers-and-instructors.html" media-type="application/xhtml+xml" />
+<item id="chapter-107" href="OEBPS/chapter-107-slug-12-3-faculty-development-and-training.html" media-type="application/xhtml+xml" />
+<item id="chapter-108" href="OEBPS/chapter-108-slug-12-4-learning-technology-support.html" media-type="application/xhtml+xml" />
+<item id="chapter-109" href="OEBPS/chapter-109-slug-12-5-conditions-of-exployment.html" media-type="application/xhtml+xml" />
+<item id="chapter-110" href="OEBPS/chapter-110-slug-12-6-team-teaching.html" media-type="application/xhtml+xml" />
+<item id="chapter-111" href="OEBPS/chapter-111-slug-12-2-an-institutional-strategy-for-teaching-in-a-digital-age.html" media-type="application/xhtml+xml" />
+<item id="chapter-112" href="OEBPS/chapter-112-slug-12-7.html" media-type="application/xhtml+xml" />
+<item id="chapter-113" href="OEBPS/chapter-113-scenario-g.html" media-type="application/xhtml+xml" />
+<item id="part-014" href="OEBPS/part-014-appendix-2-questions-to-guide-media-selection-and-use.html" media-type="application/xhtml+xml" />
+<item id="chapter-114" href="OEBPS/chapter-114-s-who-are-your-students.html" media-type="application/xhtml+xml" />
+<item id="chapter-115" href="OEBPS/chapter-115-e-ease-of-use.html" media-type="application/xhtml+xml" />
+<item id="chapter-116" href="OEBPS/chapter-116-c-what-is-the-cost-in-money-and-time.html" media-type="application/xhtml+xml" />
+<item id="chapter-117" href="OEBPS/chapter-117-t-teaching-and-other-pedagogical-factors.html" media-type="application/xhtml+xml" />
+<item id="chapter-118" href="OEBPS/chapter-118-i-interaction.html" media-type="application/xhtml+xml" />
+<item id="chapter-119" href="OEBPS/chapter-119-o-organisational-issues.html" media-type="application/xhtml+xml" />
+<item id="chapter-120" href="OEBPS/chapter-120-n-networking.html" media-type="application/xhtml+xml" />
+<item id="chapter-121" href="OEBPS/chapter-121-s-security-and-privacy.html" media-type="application/xhtml+xml" />
+<item id="part-015" href="OEBPS/part-015-appendix-3-online-learning-quality-standards-organisations-and-research.html" media-type="application/xhtml+xml" />
+<item id="part-016" href="OEBPS/part-016-appendix-2-independent-commissioned-reviews.html" media-type="application/xhtml+xml" />
+<item id="chapter-122" href="OEBPS/chapter-122-a-review-from-a-faculty-perspective.html" media-type="application/xhtml+xml" />
+<item id="chapter-123" href="OEBPS/chapter-123-a-review-from-an-open-and-distance-education-perspective.html" media-type="application/xhtml+xml" />
+<item id="chapter-124" href="OEBPS/chapter-124-a-review-from-a-digital-education-perspective.html" media-type="application/xhtml+xml" />
+<item id="chapter-125" href="OEBPS/chapter-125-merlot-ii-peer-review.html" media-type="application/xhtml+xml" />
+<item id="part-017" href="OEBPS/part-017-feedback-on-activities.html" media-type="application/xhtml+xml" />
+<item id="chapter-126" href="OEBPS/chapter-126-feedback-on-activity-1-4.html" media-type="application/xhtml+xml" />
+<item id="chapter-127" href="OEBPS/chapter-127-activity-8-1-how-many-technologies-can-you-see-in-figure-8-1.html" media-type="application/xhtml+xml" />
+<item id="chapter-128" href="OEBPS/chapter-128-activity-8-4-broadcast-or-communicative.html" media-type="application/xhtml+xml" />
+<item id="back-matter-001" href="OEBPS/back-matter-001-bibliography-2.html" media-type="application/xhtml+xml" />
+<item id="back-matter-002" href="OEBPS/back-matter-002-index.html" media-type="application/xhtml+xml" />
+<item id="media-2030-classroom" href="OEBPS/assets/2030-classroom.png" media-type="image/png" />
+<item id="media-99B-2" href="OEBPS/assets/99B-2.jpg" media-type="image/jpeg" />
+<item id="media-ADDIE-infographic-1024x830" href="OEBPS/assets/ADDIE-infographic-1024x830.jpg" media-type="image/jpeg" />
+<item id="media-AI-applications-Zeide" href="OEBPS/assets/AI-applications-Zeide.png" media-type="image/png" />
+<item id="media-AI-goals-2-300x293" href="OEBPS/assets/AI-goals-2-300x293.jpg" media-type="image/jpeg" />
+<item id="media-AI-what-it-can-do" href="OEBPS/assets/AI-what-it-can-do.png" media-type="image/png" />
+<item id="media-AUDIO-1-BT-44x44" href="OEBPS/assets/AUDIO-1-BT-44x44.png" media-type="image/png" />
+<item id="media-Aboriginal-school-2-1024x476" href="OEBPS/assets/Aboriginal-school-2-1024x476.jpg" media-type="image/jpeg" />
+<item id="media-Academic-Integrity-Game-Ryerson" href="OEBPS/assets/Academic-Integrity-Game-Ryerson.png" media-type="image/png" />
+<item id="media-Active-classroom-Queens-2" href="OEBPS/assets/Active-classroom-Queens-2.jpg" media-type="image/jpeg" />
+<item id="media-Activity-broadcast-2" href="OEBPS/assets/Activity-broadcast-2.jpg" media-type="image/jpeg" />
+<item id="media-African-man-using-iPad" href="OEBPS/assets/African-man-using-iPad.png" media-type="image/png" />
+<item id="media-Alexandra-Palace-tower-2" href="OEBPS/assets/Alexandra-Palace-tower-2.jpg" media-type="image/jpeg" />
+<item id="media-Allen-and-Seaman-2014" href="OEBPS/assets/Allen-and-Seaman-2014.png" media-type="image/png" />
+<item id="media-Apprentice-woman-2" href="OEBPS/assets/Apprentice-woman-2.jpg" media-type="image/jpeg" />
+<item id="media-Arab-Spring-4-1024x684" href="OEBPS/assets/Arab-Spring-4-1024x684.jpg" media-type="image/jpeg" />
+<item id="media-Asynchronous" href="OEBPS/assets/Asynchronous.jpg" media-type="image/jpeg" />
+<item id="media-Audio-cassette-1024x648" href="OEBPS/assets/Audio-cassette-1024x648.jpg" media-type="image/jpeg" />
+<item id="media-Audio-speakers" href="OEBPS/assets/Audio-speakers.jpg" media-type="image/jpeg" />
+<item id="media-Beach-open" href="OEBPS/assets/Beach-open.jpg" media-type="image/jpeg" />
+<item id="media-Blackboard-Help" href="OEBPS/assets/Blackboard-Help.png" media-type="image/png" />
+<item id="media-Book-video-2-300x180" href="OEBPS/assets/Book-video-2-300x180.jpg" media-type="image/jpeg" />
+<item id="media-Books-lots-2-300x225" href="OEBPS/assets/Books-lots-2-300x225.jpg" media-type="image/jpeg" />
+<item id="media-Bookstore-line-up" href="OEBPS/assets/Bookstore-line-up.jpg" media-type="image/jpeg" />
+<item id="media-Border-station-Loyalist-2" href="OEBPS/assets/Border-station-Loyalist-2.jpg" media-type="image/jpeg" />
+<item id="media-Brainstorming-2" href="OEBPS/assets/Brainstorming-2.jpg" media-type="image/jpeg" />
+<item id="media-Bristol-U-Digital-Ed" href="OEBPS/assets/Bristol-U-Digital-Ed.png" media-type="image/png" />
+<item id="media-Broadcast-or-communicative-2" href="OEBPS/assets/Broadcast-or-communicative-2.jpg" media-type="image/jpeg" />
+<item id="media-Caesium-in-water-copy-2-1024x578" href="OEBPS/assets/Caesium-in-water-copy-2-1024x578.jpg" media-type="image/jpeg" />
+<item id="media-Capella-competencies-2" href="OEBPS/assets/Capella-competencies-2.jpg" media-type="image/jpeg" />
+<item id="media-Cattle-breeds-2" href="OEBPS/assets/Cattle-breeds-2.jpg" media-type="image/jpeg" />
+<item id="media-Changing-teaching-methods-2" href="OEBPS/assets/Changing-teaching-methods-2.jpg" media-type="image/jpeg" />
+<item id="media-Choice-2" href="OEBPS/assets/Choice-2.jpg" media-type="image/jpeg" />
+<item id="media-Chris-Crowley-2" href="OEBPS/assets/Chris-Crowley-2.jpg" media-type="image/jpeg" />
+<item id="media-Classroom-old-2" href="OEBPS/assets/Classroom-old-2.jpg" media-type="image/jpeg" />
+<item id="media-Climate-change-demonstration" href="OEBPS/assets/Climate-change-demonstration.png" media-type="image/png" />
+<item id="media-Cognitive-elements-2" href="OEBPS/assets/Cognitive-elements-2.jpg" media-type="image/jpeg" />
+<item id="media-Collaborative-online-group-work-1024x755" href="OEBPS/assets/Collaborative-online-group-work-1024x755.png" media-type="image/png" />
+<item id="media-Communities-of-practice-2" href="OEBPS/assets/Communities-of-practice-2.jpg" media-type="image/jpeg" />
+<item id="media-Community-of-Inquiry-2" href="OEBPS/assets/Community-of-Inquiry-2.jpg" media-type="image/jpeg" />
+<item id="media-Comparing-modes-2" href="OEBPS/assets/Comparing-modes-2.jpg" media-type="image/jpeg" />
+<item id="media-Computer-marked-assignment-2-205x300" href="OEBPS/assets/Computer-marked-assignment-2-205x300.jpg" media-type="image/jpeg" />
+<item id="media-Computers-lots-2" href="OEBPS/assets/Computers-lots-2.jpg" media-type="image/jpeg" />
+<item id="media-Concordia-wood-shop-2-1024x686" href="OEBPS/assets/Concordia-wood-shop-2-1024x686.jpg" media-type="image/jpeg" />
+<item id="media-Connectivism-Downes-21-1024x666" href="OEBPS/assets/Connectivism-Downes-21-1024x666.jpg" media-type="image/jpeg" />
+<item id="media-Conservation-of-momentum-1024x578" href="OEBPS/assets/Conservation-of-momentum-1024x578.png" media-type="image/png" />
+<item id="media-Continuum-of-knowledge-diss-2" href="OEBPS/assets/Continuum-of-knowledge-diss-2.jpg" media-type="image/jpeg" />
+<item id="media-Continuum-of-technology-based-teaching-2" href="OEBPS/assets/Continuum-of-technology-based-teaching-2.jpg" media-type="image/jpeg" />
+<item id="media-Cost-drivers-2" href="OEBPS/assets/Cost-drivers-2.jpg" media-type="image/jpeg" />
+<item id="media-Course-team-2" href="OEBPS/assets/Course-team-2.jpg" media-type="image/jpeg" />
+<item id="cover-image" href="OEBPS/assets/Cover-V2-jpg.jpg" media-type="image/jpeg" />
+<item id="media-Creative-Commons-licenses-2" href="OEBPS/assets/Creative-Commons-licenses-2.jpg" media-type="image/jpeg" />
+<item id="media-Daedalus" href="OEBPS/assets/Daedalus.png" media-type="image/png" />
+<item id="media-Daphne-Koller" href="OEBPS/assets/Daphne-Koller.png" media-type="image/png" />
+<item id="media-Data-protection-1024x557" href="OEBPS/assets/Data-protection-1024x557.png" media-type="image/png" />
+<item id="media-Design-models-2" href="OEBPS/assets/Design-models-2.jpg" media-type="image/jpeg" />
+<item id="media-Dinner-the-office" href="OEBPS/assets/Dinner-the-office.png" media-type="image/png" />
+<item id="media-Disaggregation-2" href="OEBPS/assets/Disaggregation-2.jpg" media-type="image/jpeg" />
+<item id="media-Dogs-heart-model-2" href="OEBPS/assets/Dogs-heart-model-2.jpg" media-type="image/jpeg" />
+<item id="media-Dovedale" href="OEBPS/assets/Dovedale.jpg" media-type="image/jpeg" />
+<item id="media-ETEC-522-2011-2" href="OEBPS/assets/ETEC-522-2011-2.jpg" media-type="image/jpeg" />
+<item id="media-Epistemology-300x203" href="OEBPS/assets/Epistemology-300x203.png" media-type="image/png" />
+<item id="media-Evaluation-2" href="OEBPS/assets/Evaluation-2.jpg" media-type="image/jpeg" />
+<item id="media-Faculty-development-workshop-2" href="OEBPS/assets/Faculty-development-workshop-2.jpg" media-type="image/jpeg" />
+<item id="media-Father-with-child" href="OEBPS/assets/Father-with-child.png" media-type="image/png" />
+<item id="media-Fixed-and-variable-costs-2" href="OEBPS/assets/Fixed-and-variable-costs-2.jpg" media-type="image/jpeg" />
+<item id="media-Flu-avian-2" href="OEBPS/assets/Flu-avian-2.jpg" media-type="image/jpeg" />
+<item id="media-Future-Internet-2" href="OEBPS/assets/Future-Internet-2.jpg" media-type="image/jpeg" />
+<item id="media-GFSNeohellenic" href="OEBPS/assets/GFSNeohellenic.ttf" media-type="application/x-font-ttf" />
+<item id="media-GFSNeohellenicBold" href="OEBPS/assets/GFSNeohellenicBold.ttf" media-type="application/x-font-ttf" />
+<item id="media-GFSNeohellenicBoldItalic" href="OEBPS/assets/GFSNeohellenicBoldItalic.ttf" media-type="application/x-font-ttf" />
+<item id="media-GFSNeohellenicItalic" href="OEBPS/assets/GFSNeohellenicItalic.ttf" media-type="application/x-font-ttf" />
+<item id="media-Gartner-Hype-Cycle" href="OEBPS/assets/Gartner-Hype-Cycle.png" media-type="image/png" />
+<item id="media-Goalposts-2" href="OEBPS/assets/Goalposts-2.jpg" media-type="image/jpeg" />
+<item id="media-Group-work2" href="OEBPS/assets/Group-work2.jpg" media-type="image/jpeg" />
+<item id="media-Haematology-table" href="OEBPS/assets/Haematology-table.jpg" media-type="image/jpeg" />
+<item id="media-Harasim-Figure-63-1024x683" href="OEBPS/assets/Harasim-Figure-6.3-1024x683.jpg" media-type="image/jpeg" />
+<item id="media-Hart-River-2" href="OEBPS/assets/Hart-River-2.jpg" media-type="image/jpeg" />
+<item id="media-Harvard-1024x765" href="OEBPS/assets/Harvard-1024x765.jpg" media-type="image/jpeg" />
+<item id="media-Hibbits-and-Travin-model-3" href="OEBPS/assets/Hibbits-and-Travin-model-3.jpg" media-type="image/jpeg" />
+<item id="media-History-of-Beijing-2" href="OEBPS/assets/History-of-Beijing-2.jpg" media-type="image/jpeg" />
+<item id="media-Home-Visit-Ryerson" href="OEBPS/assets/Home-Visit-Ryerson.png" media-type="image/png" />
+<item id="media-Home-technology-183x300" href="OEBPS/assets/Home-technology-183x300.jpg" media-type="image/jpeg" />
+<item id="media-Inquiry-based-learning-2" href="OEBPS/assets/Inquiry-based-learning-2.jpg" media-type="image/jpeg" />
+<item id="media-International-students-2" href="OEBPS/assets/International-students-2.jpg" media-type="image/jpeg" />
+<item id="media-Internet" href="OEBPS/assets/Internet.png" media-type="image/png" />
+<item id="media-JIBC-mobile-web-page-2-164x300" href="OEBPS/assets/JIBC-mobile-web-page-2-164x300.jpg" media-type="image/jpeg" />
+<item id="media-Jobs-where-will-they-be-2" href="OEBPS/assets/Jobs-where-will-they-be-2.jpg" media-type="image/jpeg" />
+<item id="media-Katherine-reading-300x225" href="OEBPS/assets/Katherine-reading-300x225.jpg" media-type="image/jpeg" />
+<item id="media-Kinesthetic-learner" href="OEBPS/assets/Kinesthetic-learner.png" media-type="image/png" />
+<item id="media-Lawyers-2" href="OEBPS/assets/Lawyers-2.jpg" media-type="image/jpeg" />
+<item id="media-Learner-characteristics-2" href="OEBPS/assets/Learner-characteristics-2.jpg" media-type="image/jpeg" />
+<item id="media-Learner-support-2" href="OEBPS/assets/Learner-support-2.jpg" media-type="image/jpeg" />
+<item id="media-Lecture-class-large-2" href="OEBPS/assets/Lecture-class-large-2.jpg" media-type="image/jpeg" />
+<item id="media-Lecture-theatre-2" href="OEBPS/assets/Lecture-theatre-2.jpg" media-type="image/jpeg" />
+<item id="media-Lifelong-learners-2" href="OEBPS/assets/Lifelong-learners-2.jpg" media-type="image/jpeg" />
+<item id="media-LinkedIn-2-1024x991" href="OEBPS/assets/LinkedIn-2-1024x991.jpg" media-type="image/jpeg" />
+<item id="media-MER-wiki-2" href="OEBPS/assets/MER-wiki-2.jpg" media-type="image/jpeg" />
+<item id="media-MERLOT-Banner" href="OEBPS/assets/MERLOT-Banner.png" media-type="image/png" />
+<item id="media-MERLOT-Stars-300x175" href="OEBPS/assets/MERLOT-Stars-300x175.png" media-type="image/png" />
+<item id="media-MERLOT-all-3" href="OEBPS/assets/MERLOT-all-3.png" media-type="image/png" />
+<item id="media-MET-costs-2" href="OEBPS/assets/MET-costs-2.jpg" media-type="image/jpeg" />
+<item id="media-MIT-Lecture-mechaneng-2" href="OEBPS/assets/MIT-Lecture-mechan.eng-2.jpg" media-type="image/jpeg" />
+<item id="media-MOOC-Forsythe-2" href="OEBPS/assets/MOOC-Forsythe-2.jpg" media-type="image/jpeg" />
+<item id="media-MOOC-completion-rates-2" href="OEBPS/assets/MOOC-completion-rates-2.jpg" media-type="image/jpeg" />
+<item id="media-MOOC-mania-2" href="OEBPS/assets/MOOC-mania-2.jpg" media-type="image/jpeg" />
+<item id="media-Malala-2" href="OEBPS/assets/Malala-2.jpg" media-type="image/jpeg" />
+<item id="media-Man-cheeringup-woman" href="OEBPS/assets/Man-cheeringup-woman.png" media-type="image/png" />
+<item id="media-Math-graph-2" href="OEBPS/assets/Math-graph-2.jpg" media-type="image/jpeg" />
+<item id="media-Mathematical-formulae-2" href="OEBPS/assets/Mathematical-formulae-2.jpg" media-type="image/jpeg" />
+<item id="media-Media-analysis" href="OEBPS/assets/Media-analysis.png" media-type="image/png" />
+<item id="media-Media-richness-2" href="OEBPS/assets/Media-richness-2.jpg" media-type="image/jpeg" />
+<item id="media-Medieval-lecture-2" href="OEBPS/assets/Medieval-lecture-2.jpg" media-type="image/jpeg" />
+<item id="media-Modularization-2" href="OEBPS/assets/Modularization-2.jpg" media-type="image/jpeg" />
+<item id="media-Moses-10-commandments-2" href="OEBPS/assets/Moses-10-commandments-2.jpg" media-type="image/jpeg" />
+<item id="media-Muslim-girls-using-mobiles-2" href="OEBPS/assets/Muslim-girls-using-mobiles-2.jpg" media-type="image/jpeg" />
+<item id="media-NAS-transcript-2" href="OEBPS/assets/NAS-transcript-2.jpg" media-type="image/jpeg" />
+<item id="media-Nature-learning-2-300x239" href="OEBPS/assets/Nature-learning-2-300x239.jpg" media-type="image/jpeg" />
+<item id="media-OER-forum-2" href="OEBPS/assets/OER-forum-2.jpg" media-type="image/jpeg" />
+<item id="media-Older-woman-studying-2" href="OEBPS/assets/Older-woman-studying-2.jpg" media-type="image/jpeg" />
+<item id="media-Online-student-2" href="OEBPS/assets/Online-student-2.jpg" media-type="image/jpeg" />
+<item id="media-Open-Stax-2" href="OEBPS/assets/Open-Stax-2.jpg" media-type="image/jpeg" />
+<item id="media-Open-landscape-Stacey" href="OEBPS/assets/Open-landscape-Stacey.png" media-type="image/png" />
+<item id="media-Open-pedagogy-Bronwyn-Hegarty-2" href="OEBPS/assets/Open-pedagogy-Bronwyn-Hegarty-2.jpg" media-type="image/jpeg" />
+<item id="media-OpenLearn-video-on-ICT-1024x572" href="OEBPS/assets/OpenLearn-video-on-ICT-1024x572.png" media-type="image/png" />
+<item id="media-Ottawa-e-learning-plan-2" href="OEBPS/assets/Ottawa-e-learning-plan-2.jpg" media-type="image/jpeg" />
+<item id="media-Personal-learning-environment-2-Janson-Hews" href="OEBPS/assets/Personal-learning-environment-2-Janson-Hews.jpg" media-type="image/jpeg" />
+<item id="media-Problem-based-learning-2-1024x695" href="OEBPS/assets/Problem-based-learning-2-1024x695.jpg" media-type="image/jpeg" />
+<item id="media-Project-work-2" href="OEBPS/assets/Project-work-2.jpg" media-type="image/jpeg" />
+<item id="media-Prokaryotic-Cells" href="OEBPS/assets/Prokaryotic-Cells.png" media-type="image/png" />
+<item id="media-Quality-2-1024x611" href="OEBPS/assets/Quality-2-1024x611.jpg" media-type="image/jpeg" />
+<item id="media-Quality-guarantee" href="OEBPS/assets/Quality-guarantee.jpg" media-type="image/jpeg" />
+<item id="media-Remote-proctoring-WGU" href="OEBPS/assets/Remote-proctoring-WGU.png" media-type="image/png" />
+<item id="media-Robot-vs-women-2" href="OEBPS/assets/Robot-vs-women-2.jpg" media-type="image/jpeg" />
+<item id="media-SAMR" href="OEBPS/assets/SAMR.png" media-type="image/png" />
+<item id="media-SBL-grk" href="OEBPS/assets/SBL-grk.ttf" media-type="application/x-font-ttf" />
+<item id="media-SECTIONS-model-2" href="OEBPS/assets/SECTIONS-model-2.jpg" media-type="image/jpeg" />
+<item id="media-Scientist-using-microscope-2" href="OEBPS/assets/Scientist-using-microscope-2.jpg" media-type="image/jpeg" />
+<item id="media-Screen-Shot-2019-05-06-at-85635-PM-300x223" href="OEBPS/assets/Screen-Shot-2019-05-06-at-8.56.35-PM-300x223.png" media-type="image/png" />
+<item id="media-Screen-Shot-2019-05-06-at-85827-PM-300x300" href="OEBPS/assets/Screen-Shot-2019-05-06-at-8.58.27-PM-300x300.png" media-type="image/png" />
+<item id="media-Screen-Shot-2019-05-07-at-32731-AM-214x300" href="OEBPS/assets/Screen-Shot-2019-05-07-at-3.27.31-AM-214x300.png" media-type="image/png" />
+<item id="media-Screen-Shot-2019-05-07-at-82525-AM-1024x755" href="OEBPS/assets/Screen-Shot-2019-05-07-at-8.25.25-AM-1024x755.png" media-type="image/png" />
+<item id="media-Screen-Shot-2019-05-20-at-25133-PM" href="OEBPS/assets/Screen-Shot-2019-05-20-at-2.51.33-PM.png" media-type="image/png" />
+<item id="media-Screen-Shot-2019-08-05-at-54115-PM" href="OEBPS/assets/Screen-Shot-2019-08-05-at-5.41.15-PM.png" media-type="image/png" />
+<item id="media-Screen-Shot-2019-08-11-at-122819-PM" href="OEBPS/assets/Screen-Shot-2019-08-11-at-12.28.19-PM.png" media-type="image/png" />
+<item id="media-Screen-Shot-2019-09-10-at-50346-PM" href="OEBPS/assets/Screen-Shot-2019-09-10-at-5.03.46-PM.png" media-type="image/png" />
+<item id="media-Serious-game-design-methodology" href="OEBPS/assets/Serious-game-design-methodology.png" media-type="image/png" />
+<item id="media-Skills-high-end-2-png" href="OEBPS/assets/Skills-high-end-2-png.png" media-type="image/png" />
+<item id="media-Skinner-and-his-machine-2" href="OEBPS/assets/Skinner-and-his-machine-2.jpg" media-type="image/jpeg" />
+<item id="media-Slide15-548x411" href="OEBPS/assets/Slide15-548x411.jpg" media-type="image/jpeg" />
+<item id="media-Social-learning-techs-2-1024x845" href="OEBPS/assets/Social-learning-techs-2-1024x845.jpg" media-type="image/jpeg" />
+<item id="media-Socrates-and-students-2" href="OEBPS/assets/Socrates-and-students-2.jpg" media-type="image/jpeg" />
+<item id="media-Steelcase-classroom-2" href="OEBPS/assets/Steelcase-classroom-2.jpg" media-type="image/jpeg" />
+<item id="media-Structure-Arisean-Reach-2" href="OEBPS/assets/Structure-Arisean-Reach-2.jpg" media-type="image/jpeg" />
+<item id="media-Student-seminar-2" href="OEBPS/assets/Student-seminar-2.jpg" media-type="image/jpeg" />
+<item id="media-Students-in-bar" href="OEBPS/assets/Students-in-bar.png" media-type="image/png" />
+<item id="media-Students-in-small-group-online-2-1" href="OEBPS/assets/Students-in-small-group-online-2-1.jpg" media-type="image/jpeg" />
+<item id="media-Students-in-small-group-online-2" href="OEBPS/assets/Students-in-small-group-online-2.jpg" media-type="image/jpeg" />
+<item id="media-Superhero-teacher" href="OEBPS/assets/Superhero-teacher.png" media-type="image/png" />
+<item id="media-Teaching-approaches-2" href="OEBPS/assets/Teaching-approaches-2.jpg" media-type="image/jpeg" />
+<item id="media-Teaching-in-a-Digital-Age-signature" href="OEBPS/assets/Teaching-in-a-Digital-Age-signature.jpg" media-type="image/jpeg" />
+<item id="media-The-magic-of-the-campus-2" href="OEBPS/assets/The-magic-of-the-campus-2.jpg" media-type="image/jpeg" />
+<item id="media-The-solar-system-2-1024x533" href="OEBPS/assets/The-solar-system-2-1024x533.jpg" media-type="image/jpeg" />
+<item id="media-Threaded-discussion-forum-548x474" href="OEBPS/assets/Threaded-discussion-forum-548x474.jpg" media-type="image/jpeg" />
+<item id="media-Tony-in-Rio" href="OEBPS/assets/Tony-in-Rio.jpg" media-type="image/jpeg" />
+<item id="media-Tony-smiling-left" href="OEBPS/assets/Tony-smiling-left.jpg" media-type="image/jpeg" />
+<item id="media-Tony-talking-head" href="OEBPS/assets/Tony-talking-head.jpg" media-type="image/jpeg" />
+<item id="media-Tutorial-2" href="OEBPS/assets/Tutorial-2.jpg" media-type="image/jpeg" />
+<item id="media-UBC-Connect-screenshot-2" href="OEBPS/assets/UBC-Connect-screenshot-2.jpg" media-type="image/jpeg" />
+<item id="media-UK-Quality-Code" href="OEBPS/assets/UK-Quality-Code.png" media-type="image/png" />
+<item id="media-VR-Chemical-compounds-jpg" href="OEBPS/assets/VR-Chemical-compounds-jpg.jpg" media-type="image/jpeg" />
+<item id="media-VUCA-2" href="OEBPS/assets/VUCA-2.jpg" media-type="image/jpeg" />
+<item id="media-Video-production-studio-UI-UC" href="OEBPS/assets/Video-production-studio-UI-UC.png" media-type="image/png" />
+<item id="media-Video-streaming" href="OEBPS/assets/Video-streaming.jpg" media-type="image/jpeg" />
+<item id="media-Virtual-Reality-of-Human-Anatomy-2" href="OEBPS/assets/Virtual-Reality-of-Human-Anatomy-2.jpg" media-type="image/jpeg" />
+<item id="media-Wei-2" href="OEBPS/assets/Wei-2.jpg" media-type="image/jpeg" />
+<item id="media-Wei-large-line-1" href="OEBPS/assets/Wei-large-line-1.jpg" media-type="image/jpeg" />
+<item id="media-Wei-large-line" href="OEBPS/assets/Wei-large-line.jpg" media-type="image/jpeg" />
+<item id="media-Women-executives-2" href="OEBPS/assets/Women-executives-2.jpg" media-type="image/jpeg" />
+<item id="media-Women-on-radio" href="OEBPS/assets/Women-on-radio.png" media-type="image/png" />
+<item id="media-Workshop-on-blended-learning" href="OEBPS/assets/Workshop-on-blended-learning.png" media-type="image/png" />
+<item id="media-apprentices-2" href="OEBPS/assets/apprentices-2.jpg" media-type="image/jpeg" />
+<item id="media-assessment2" href="OEBPS/assets/assessment2.jpg" media-type="image/jpeg" />
+<item id="media-case-based-learning-vet-science-2" href="OEBPS/assets/case-based-learning-vet-science-2.jpg" media-type="image/jpeg" />
+<item id="media-cc-by-nc" href="OEBPS/assets/cc-by-nc.png" media-type="image/png" />
+<item id="media-cognitive-domain-revised-2" href="OEBPS/assets/cognitive-domain-revised-2.jpg" media-type="image/jpeg" />
+<item id="media-computer-frustration-2" href="OEBPS/assets/computer-frustration-2.jpg" media-type="image/jpeg" />
+<item id="media-content-2" href="OEBPS/assets/content-2.jpg" media-type="image/jpeg" />
+<item id="media-edX-participants-2" href="OEBPS/assets/edX-participants-2.jpg" media-type="image/jpeg" />
+<item id="media-exams-2" href="OEBPS/assets/exams-2.jpg" media-type="image/jpeg" />
+<item id="media-foundations-building-2" href="OEBPS/assets/foundations-building-2.jpg" media-type="image/jpeg" />
+<item id="media-games-designer-2" href="OEBPS/assets/games-designer-2.jpg" media-type="image/jpeg" />
+<item id="media-helping-hand-2" href="OEBPS/assets/helping-hand-2.jpg" media-type="image/jpeg" />
+<item id="media-icon-audio" href="OEBPS/assets/icon-audio.png" media-type="image/png" />
+<item id="media-icon-interactive" href="OEBPS/assets/icon-interactive.png" media-type="image/png" />
+<item id="media-icon-video" href="OEBPS/assets/icon-video.png" media-type="image/png" />
+<item id="media-media-interaction-2" href="OEBPS/assets/media-interaction-2.jpg" media-type="image/jpeg" />
+<item id="media-phET-2-Radiating-charge" href="OEBPS/assets/phET-2-Radiating-charge.jpg" media-type="image/jpeg" />
+<item id="media-resources-2" href="OEBPS/assets/resources-2.jpg" media-type="image/jpeg" />
+<item id="media-skills-2" href="OEBPS/assets/skills-2.jpg" media-type="image/jpeg" />
+<item id="media-workers-in-an-office" href="OEBPS/assets/workers-in-an-office.jpg" media-type="image/jpeg" />
+		<item id="ncx" href="toc.ncx" media-type="application/x-dtbncx+xml" />
+		<item id="stylesheet" href="OEBPS/clarke.css"  media-type="text/css" />	</manifest>
+
+
+	<spine toc="ncx">
+		<itemref idref="front-cover" linear="yes" />
+<itemref idref="title-page" linear="yes" />
+<itemref idref="copyright" linear="yes" />
+<itemref idref="table-of-contents" linear="yes" />
+<itemref idref="front-matter-001" linear="yes" />
+<itemref idref="front-matter-002" linear="yes" />
+<itemref idref="front-matter-003" linear="yes" />
+<itemref idref="front-matter-004" linear="yes" />
+<itemref idref="front-matter-005" linear="yes" />
+<itemref idref="part-001" linear="yes" />
+<itemref idref="chapter-001" linear="yes" />
+<itemref idref="chapter-002" linear="yes" />
+<itemref idref="chapter-003" linear="yes" />
+<itemref idref="chapter-004" linear="yes" />
+<itemref idref="chapter-005" linear="yes" />
+<itemref idref="chapter-006" linear="yes" />
+<itemref idref="chapter-007" linear="yes" />
+<itemref idref="chapter-008" linear="yes" />
+<itemref idref="part-002" linear="yes" />
+<itemref idref="chapter-009" linear="yes" />
+<itemref idref="chapter-010" linear="yes" />
+<itemref idref="chapter-011" linear="yes" />
+<itemref idref="chapter-012" linear="yes" />
+<itemref idref="chapter-013" linear="yes" />
+<itemref idref="chapter-014" linear="yes" />
+<itemref idref="chapter-015" linear="yes" />
+<itemref idref="chapter-016" linear="yes" />
+<itemref idref="chapter-017" linear="yes" />
+<itemref idref="part-003" linear="yes" />
+<itemref idref="chapter-018" linear="yes" />
+<itemref idref="chapter-019" linear="yes" />
+<itemref idref="chapter-020" linear="yes" />
+<itemref idref="chapter-021" linear="yes" />
+<itemref idref="chapter-022" linear="yes" />
+<itemref idref="chapter-023" linear="yes" />
+<itemref idref="chapter-024" linear="yes" />
+<itemref idref="chapter-025" linear="yes" />
+<itemref idref="chapter-026" linear="yes" />
+<itemref idref="part-004" linear="yes" />
+<itemref idref="chapter-027" linear="yes" />
+<itemref idref="chapter-028" linear="yes" />
+<itemref idref="chapter-029" linear="yes" />
+<itemref idref="chapter-030" linear="yes" />
+<itemref idref="chapter-031" linear="yes" />
+<itemref idref="chapter-032" linear="yes" />
+<itemref idref="chapter-033" linear="yes" />
+<itemref idref="chapter-034" linear="yes" />
+<itemref idref="chapter-035" linear="yes" />
+<itemref idref="chapter-036" linear="yes" />
+<itemref idref="part-005" linear="yes" />
+<itemref idref="chapter-037" linear="yes" />
+<itemref idref="chapter-038" linear="yes" />
+<itemref idref="chapter-039" linear="yes" />
+<itemref idref="chapter-040" linear="yes" />
+<itemref idref="chapter-041" linear="yes" />
+<itemref idref="chapter-042" linear="yes" />
+<itemref idref="chapter-043" linear="yes" />
+<itemref idref="part-006" linear="yes" />
+<itemref idref="chapter-044" linear="yes" />
+<itemref idref="chapter-045" linear="yes" />
+<itemref idref="chapter-046" linear="yes" />
+<itemref idref="chapter-047" linear="yes" />
+<itemref idref="chapter-048" linear="yes" />
+<itemref idref="chapter-049" linear="yes" />
+<itemref idref="chapter-050" linear="yes" />
+<itemref idref="chapter-051" linear="yes" />
+<itemref idref="chapter-052" linear="yes" />
+<itemref idref="chapter-053" linear="yes" />
+<itemref idref="part-007" linear="yes" />
+<itemref idref="chapter-054" linear="yes" />
+<itemref idref="chapter-055" linear="yes" />
+<itemref idref="chapter-056" linear="yes" />
+<itemref idref="chapter-057" linear="yes" />
+<itemref idref="chapter-058" linear="yes" />
+<itemref idref="chapter-059" linear="yes" />
+<itemref idref="chapter-060" linear="yes" />
+<itemref idref="chapter-061" linear="yes" />
+<itemref idref="part-008" linear="yes" />
+<itemref idref="chapter-062" linear="yes" />
+<itemref idref="chapter-063" linear="yes" />
+<itemref idref="chapter-064" linear="yes" />
+<itemref idref="chapter-065" linear="yes" />
+<itemref idref="chapter-066" linear="yes" />
+<itemref idref="chapter-067" linear="yes" />
+<itemref idref="chapter-068" linear="yes" />
+<itemref idref="chapter-069" linear="yes" />
+<itemref idref="chapter-070" linear="yes" />
+<itemref idref="chapter-071" linear="yes" />
+<itemref idref="chapter-072" linear="yes" />
+<itemref idref="part-009" linear="yes" />
+<itemref idref="chapter-073" linear="yes" />
+<itemref idref="chapter-074" linear="yes" />
+<itemref idref="chapter-075" linear="yes" />
+<itemref idref="chapter-076" linear="yes" />
+<itemref idref="chapter-077" linear="yes" />
+<itemref idref="chapter-078" linear="yes" />
+<itemref idref="chapter-079" linear="yes" />
+<itemref idref="chapter-080" linear="yes" />
+<itemref idref="chapter-081" linear="yes" />
+<itemref idref="chapter-082" linear="yes" />
+<itemref idref="part-010" linear="yes" />
+<itemref idref="chapter-083" linear="yes" />
+<itemref idref="chapter-084" linear="yes" />
+<itemref idref="chapter-085" linear="yes" />
+<itemref idref="chapter-086" linear="yes" />
+<itemref idref="chapter-087" linear="yes" />
+<itemref idref="part-011" linear="yes" />
+<itemref idref="chapter-088" linear="yes" />
+<itemref idref="chapter-089" linear="yes" />
+<itemref idref="chapter-090" linear="yes" />
+<itemref idref="chapter-091" linear="yes" />
+<itemref idref="chapter-092" linear="yes" />
+<itemref idref="chapter-093" linear="yes" />
+<itemref idref="part-012" linear="yes" />
+<itemref idref="chapter-094" linear="yes" />
+<itemref idref="chapter-095" linear="yes" />
+<itemref idref="chapter-096" linear="yes" />
+<itemref idref="chapter-097" linear="yes" />
+<itemref idref="chapter-098" linear="yes" />
+<itemref idref="chapter-099" linear="yes" />
+<itemref idref="chapter-100" linear="yes" />
+<itemref idref="chapter-101" linear="yes" />
+<itemref idref="chapter-102" linear="yes" />
+<itemref idref="chapter-103" linear="yes" />
+<itemref idref="chapter-104" linear="yes" />
+<itemref idref="chapter-105" linear="yes" />
+<itemref idref="part-013" linear="yes" />
+<itemref idref="chapter-106" linear="yes" />
+<itemref idref="chapter-107" linear="yes" />
+<itemref idref="chapter-108" linear="yes" />
+<itemref idref="chapter-109" linear="yes" />
+<itemref idref="chapter-110" linear="yes" />
+<itemref idref="chapter-111" linear="yes" />
+<itemref idref="chapter-112" linear="yes" />
+<itemref idref="chapter-113" linear="yes" />
+<itemref idref="part-014" linear="yes" />
+<itemref idref="chapter-114" linear="yes" />
+<itemref idref="chapter-115" linear="yes" />
+<itemref idref="chapter-116" linear="yes" />
+<itemref idref="chapter-117" linear="yes" />
+<itemref idref="chapter-118" linear="yes" />
+<itemref idref="chapter-119" linear="yes" />
+<itemref idref="chapter-120" linear="yes" />
+<itemref idref="chapter-121" linear="yes" />
+<itemref idref="part-015" linear="yes" />
+<itemref idref="part-016" linear="yes" />
+<itemref idref="chapter-122" linear="yes" />
+<itemref idref="chapter-123" linear="yes" />
+<itemref idref="chapter-124" linear="yes" />
+<itemref idref="chapter-125" linear="yes" />
+<itemref idref="part-017" linear="yes" />
+<itemref idref="chapter-126" linear="yes" />
+<itemref idref="chapter-127" linear="yes" />
+<itemref idref="chapter-128" linear="yes" />
+<itemref idref="back-matter-001" linear="yes" />
+<itemref idref="back-matter-002" linear="yes" />
+	</spine>
+
+
+	<guide>
+		<reference type="toc" title="Table of Contents" href="OEBPS/table-of-contents.html" />
+		<reference type="cover" title="cover" href="OEBPS/front-cover.html" />
+		<reference type="text" title="start" href="OEBPS/front-matter-001-scenario-a.html" />
+	</guide>
+
+
+</package>

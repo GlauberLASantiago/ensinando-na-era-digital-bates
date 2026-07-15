@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ensinando na Era Digital - Tradução em Português</title>
+    <link rel="manifest" href="manifest.json">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #1e3a8a;
+            --primary-dark: #0f172a;
+            --primary-light: #2563eb;
+            --accent: #3b82f6;
+            --text-dark: #1e293b;
+            --text-light: #64748b;
+            --bg-gradient: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+            --card-bg: rgba(255, 255, 255, 0.85);
+            --border: #e2e8f0;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, sans-serif;
+            color: var(--text-dark);
+            background: var(--bg-gradient);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            overflow-x: hidden;
+        }
+
+        header {
+            padding: 2rem 4rem;
+            display: flex;
+            align-items: center;
+        }
+
+        .header-logo {
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--primary);
+            text-decoration: none;
+            letter-spacing: -0.02em;
+        }
+
+        main {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem 4rem;
+            max-width: 1400px;
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 4rem;
+            align-items: center;
+            width: 100%;
+        }
+
+        .info-section {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .badge {
+            align-self: flex-start;
+            background-color: rgba(37, 99, 235, 0.1);
+            color: var(--primary-light);
+            padding: 0.5rem 1rem;
+            border-radius: 9999px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+        }
+
+        h1 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 3.5rem;
+            font-weight: 800;
+            line-height: 1.1;
+            color: var(--primary-dark);
+            letter-spacing: -0.03em;
+        }
+
+        h1 span {
+            background: linear-gradient(to right, var(--primary), var(--primary-light));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .subtitle {
+            font-size: 1.25rem;
+            color: var(--text-light);
+            font-weight: 500;
+            line-height: 1.4;
+        }
+
+        .author {
+            font-size: 1.1rem;
+            color: var(--text-dark);
+            font-weight: 600;
+        }
+
+        .context-card {
+            background: var(--card-bg);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            padding: 1.5rem;
+            border-radius: 16px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.03);
+            font-size: 0.95rem;
+            line-height: 1.6;
+            color: #334155;
+            border-left: 5px solid var(--primary-light);
+        }
+
+        .context-card p {
+            margin-bottom: 0.75rem;
+        }
+
+        .context-card p:last-child {
+            margin-bottom: 0;
+        }
+
+        .cta-container {
+            margin-top: 1rem;
+            display: flex;
+            gap: 1rem;
+        }
+
+        .btn-primary {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--primary-light), var(--primary));
+            color: white;
+            padding: 1rem 2.5rem;
+            border-radius: 12px;
+            font-weight: 700;
+            text-decoration: none;
+            font-size: 1.1rem;
+            box-shadow: 0 10px 25px rgba(37, 99, 235, 0.25);
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 15px 30px rgba(37, 99, 235, 0.35);
+            background: linear-gradient(135deg, #3b82f6, var(--primary));
+        }
+
+        .cover-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            perspective: 1200px;
+        }
+
+        .book-wrapper {
+            position: relative;
+            transition: transform 0.5s ease;
+            transform-style: preserve-3d;
+        }
+
+        .book-wrapper:hover {
+            transform: rotateY(-12deg) rotateX(6deg) scale(1.03);
+        }
+
+        .book-cover {
+            max-width: 320px;
+            height: auto;
+            border-radius: 8px 16px 16px 8px;
+            box-shadow: 
+                -5px 5px 10px rgba(0,0,0,0.1),
+                -10px 10px 20px rgba(0,0,0,0.15),
+                -20px 20px 40px rgba(0,0,0,0.2);
+            display: block;
+            transform: rotateY(-6deg) rotateX(2deg);
+            background-color: #f1f5f9;
+        }
+
+        /* Footer styling */
+        footer {
+            padding: 2rem 4rem;
+            border-top: 1px solid rgba(226, 232, 240, 0.8);
+            background-color: rgba(255, 255, 255, 0.6);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+        }
+
+        .footer-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 2rem;
+            width: 100%;
+        }
+
+        .footer-text {
+            font-size: 0.85rem;
+            color: var(--text-light);
+            line-height: 1.5;
+            max-width: 700px;
+        }
+
+        .footer-logo-link {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            gap: 0.75rem;
+            transition: opacity 0.2s;
+            flex-shrink: 0;
+        }
+
+        .footer-logo-link:hover {
+            opacity: 0.85;
+        }
+
+        .horizonte-logo {
+            height: 38px;
+            width: auto;
+            display: block;
+        }
+
+        .support-badge {
+            font-size: 0.75rem;
+            font-weight: 700;
+            color: #475569;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        /* Responsive Breakpoints */
+        @media (max-width: 1024px) {
+            .hero-grid {
+                grid-template-columns: 1.1fr 0.9fr;
+                gap: 2rem;
+            }
+            h1 {
+                font-size: 2.75rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            header {
+                padding: 1.5rem 2rem;
+                justify-content: center;
+            }
+            main {
+                padding: 1rem 2rem 3rem 2rem;
+            }
+            .hero-grid {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+                text-align: center;
+            }
+            .badge {
+                align-self: center;
+            }
+            .cta-container {
+                justify-content: center;
+            }
+            .cover-section {
+                order: -1;
+            }
+            .book-cover {
+                max-width: 250px;
+            }
+            footer {
+                padding: 2rem 2rem;
+            }
+            .footer-container {
+                flex-direction: column;
+                text-align: center;
+                gap: 1.5rem;
+            }
+        }
+
+        html.dark-theme {
+            --bg-gradient: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            --card-bg: rgba(30, 41, 59, 0.7);
+            --text-dark: #f1f5f9;
+            --text-light: #94a3b8;
+            --border: #334155;
+        }
+
+        html.dark-theme h1 {
+            color: #ffffff;
+        }
+
+        html.dark-theme .context-card {
+            color: #cbd5e1;
+            border-left-color: #38bdf8;
+        }
+
+        html.dark-theme footer {
+            background-color: rgba(15, 23, 42, 0.6);
+            border-top-color: #334155;
+        }
+
+        html.dark-theme .support-badge {
+            color: #94a3b8;
+        }
+
+        .theme-toggle-btn {
+            background: none;
+            border: 1px solid var(--border);
+            padding: 0.4rem 0.7rem;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1.1rem;
+            color: var(--text-dark);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.2s ease;
+        }
+        
+        .theme-toggle-btn:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+            border-color: var(--primary-light);
+        }
+        
+        html.dark-theme .theme-toggle-btn:hover {
+            background-color: rgba(255, 255, 255, 0.05);
+        }
+        
+        .btn-secondary {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0.8rem 1.6rem;
+            background-color: transparent;
+            color: var(--primary);
+            border: 2px solid var(--primary);
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: all 0.2s ease;
+            cursor: pointer;
+        }
+
+        .btn-secondary:hover {
+            background-color: var(--primary);
+            color: white;
+            transform: translateY(-1px);
+        }
+
+        html.dark-theme .btn-secondary {
+            color: #38bdf8;
+            border-color: #38bdf8;
+        }
+
+        html.dark-theme .btn-secondary:hover {
+            background-color: #38bdf8;
+            color: #0f172a;
+        }
+    </style>
+</head>
+<body>
+
+    <header style="justify-content: space-between;">
+        <a href="#" class="header-logo">Ensinando na Era Digital</a>
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Alternar tema" onclick="toggleTheme()">
+            <span class="icon-theme">🌙</span>
+        </button>
+    </header>
+
+    <main>
+        <div class="hero-grid">
+            <div class="info-section">
+                <span class="badge">Segunda Edição Traduzida</span>
+                <h1>Ensinando na<br><span>Era Digital</span></h1>
+                <p class="subtitle">Diretrizes para o ensino e a aprendizagem</p>
+                <p class="author">Por Tony Bates</p>
+                
+                <div class="context-card">
+                    <p>Esta tradução foi realizada utilizando recursos de <strong>Inteligência Artificial</strong> sob supervisão do <strong>Prof. Glauber Santiago (UFSCar)</strong>.</p>
+                    <p>Esta iniciativa visa difundir o trabalho de excelência do autor Tony Bates, facilitando e ampliando o acesso para educadores, gestores e pesquisadores no Brasil.</p>
+                </div>
+
+                <div class="cta-container" style="display: flex; gap: 1rem; align-items: center; flex-wrap: wrap; margin-top: 2rem;">
+                    <a href="leitor.html" class="btn-primary">Entrar no Livro</a>
+                    <button id="pwa-install-btn" class="btn-secondary" style="display: none;">Instalar no Dispositivo</button>
+                </div>
+            </div>
+            
+            <div class="cover-section">
+                <div class="book-wrapper">
+                    <img src="OEBPS/assets/Cover-V2-jpg.jpg" alt="Capa do livro: Ensinando na Era Digital" class="book-cover">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-text">
+                Este site é um recurso aberto criado para hospedar a tradução brasileira da obra. 
+                Todo o conteúdo foi estruturado para acesso facilitado e leitura dinâmica.
+            </div>
+            <a href="https://grupohorizonte.ufscar.br/" target="_blank" class="footer-logo-link">
+                <span class="support-badge">Apoio:</span>
+                <img src="OEBPS/assets/logo-horizonte.png" alt="Grupo Horizonte" class="horizonte-logo">
+            </a>
+        </div>
+    </footer>
+
+    <script>
+        var currentTheme = localStorage.getItem('theme') || 'light';
+        var htmlEl = document.documentElement;
+        var themeToggleBtn = document.getElementById('theme-toggle');
+        var themeIcon = themeToggleBtn.querySelector('.icon-theme');
+
+        function applyTheme(theme) {
+            if (theme === 'dark') {
+                htmlEl.classList.add('dark-theme');
+                themeIcon.textContent = '☀️';
+            } else {
+                htmlEl.classList.remove('dark-theme');
+                themeIcon.textContent = '🌙';
+            }
+        }
+
+        function toggleTheme() {
+            if (htmlEl.classList.contains('dark-theme')) {
+                currentTheme = 'light';
+            } else {
+                currentTheme = 'dark';
+            }
+            localStorage.setItem('theme', currentTheme);
+            applyTheme(currentTheme);
+        }
+
+        applyTheme(currentTheme);
+
+        // Registro do Service Worker para PWA
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('sw.js')
+                    .then(reg => console.log('Service Worker registrado com sucesso:', reg.scope))
+                    .catch(err => console.log('Falha ao registrar o Service Worker:', err));
+            });
+        }
+
+        // Lógica de Instalação do PWA
+        let deferredPrompt;
+        const installBtn = document.getElementById('pwa-install-btn');
+
+        window.addEventListener('beforeinstallprompt', (e) => {
+            e.preventDefault();
+            deferredPrompt = e;
+            installBtn.style.display = 'inline-flex';
+        });
+
+        installBtn.addEventListener('click', async () => {
+            if (deferredPrompt) {
+                deferredPrompt.prompt();
+                const { outcome } = await deferredPrompt.userChoice;
+                console.log(`Escolha de instalação do usuário: ${outcome}`);
+                deferredPrompt = null;
+                installBtn.style.display = 'none';
+            }
+        });
+
+        window.addEventListener('appinstalled', (evt) => {
+            console.log('Aplicativo instalado com sucesso!');
+            installBtn.style.display = 'none';
+        });
+    </script>
+</body>
+</html>

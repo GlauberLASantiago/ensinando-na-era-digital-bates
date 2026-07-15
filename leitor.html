@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ensinando na Era Digital - Segunda Edição</title>
+    <link rel="manifest" href="manifest.json">
+    <style>
+        :root {
+            --primary: #1e3a8a;
+            --primary-dark: #0f172a;
+            --primary-light: #3b82f6;
+            --text: #1f2937;
+            --bg: #f8fafc;
+            --sidebar-bg: #ffffff;
+            --border: #e2e8f0;
+            --active-bg: #eff6ff;
+            --active-text: #1d4ed8;
+        }
+
+        html.dark-theme {
+            --primary-light: #38bdf8;
+            --text: #cbd5e1;
+            --bg: #0f172a;
+            --sidebar-bg: #1e293b;
+            --border: #334155;
+            --active-bg: #0f172a;
+            --active-text: #38bdf8;
+        }
+
+        html.dark-theme .nav-item.part-title {
+            background-color: #0f172a;
+            color: #94a3b8;
+        }
+
+        html.dark-theme .top-bar div {
+            color: #38bdf8 !important;
+        }
+
+        html.dark-theme .btn-toggle {
+            color: #38bdf8 !important;
+        }
+
+        html.dark-theme .sidebar-header {
+            background: linear-gradient(135deg, #0f172a, #1e293b);
+        }
+
+        .theme-toggle-btn {
+            background: none;
+            border: 1px solid var(--border);
+            padding: 0.35rem 0.6rem;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1rem;
+            color: var(--text);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.2s ease;
+        }
+        
+        .theme-toggle-btn:hover {
+            background-color: var(--active-bg);
+            border-color: var(--primary-light);
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: var(--text);
+            background-color: var(--bg);
+            display: flex;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        /* Sidebar navigation */
+        .sidebar {
+            width: 340px;
+            background-color: var(--sidebar-bg);
+            border-right: 1px solid var(--border);
+            display: flex;
+            flex-direction: column;
+            flex-shrink: 0;
+            transition: transform 0.3s ease;
+            z-index: 10;
+        }
+
+        .sidebar-header {
+            padding: 1.25rem;
+            border-bottom: 1px solid var(--border);
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: white;
+        }
+
+        .sidebar-header h1 {
+            font-size: 1.15rem;
+            margin: 0 0 0.25rem 0;
+            font-weight: 700;
+        }
+
+        .sidebar-header p {
+            font-size: 0.8rem;
+            margin: 0;
+            opacity: 0.85;
+        }
+
+        .nav-container {
+            flex: 1;
+            overflow-y: auto;
+            padding: 0.5rem 0;
+        }
+
+        .nav-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .nav-item {
+            margin: 0;
+            border-bottom: 1px solid rgba(226, 232, 240, 0.5);
+        }
+
+        .nav-item.part-title {
+            background-color: #f1f5f9;
+            font-weight: 700;
+            font-size: 0.85rem;
+            padding: 0.75rem 1rem;
+            color: #475569;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .nav-item.part-title a {
+            color: inherit;
+            text-decoration: none;
+            display: block;
+        }
+
+        .nav-item.part-title a:hover {
+            color: var(--primary-light);
+        }
+
+        .nav-link {
+            display: block;
+            padding: 0.75rem 1.25rem;
+            color: var(--text);
+            text-decoration: none;
+            font-size: 0.9rem;
+            line-height: 1.4;
+            transition: all 0.15s ease;
+        }
+
+        .nav-link:hover {
+            background-color: var(--bg);
+            color: var(--primary-light);
+            padding-left: 1.5rem;
+        }
+
+        .nav-link.active {
+            background-color: var(--active-bg);
+            color: var(--active-text);
+            font-weight: 600;
+            border-left: 4px solid var(--primary-light);
+            padding-left: 1.15rem;
+        }
+
+        .nav-sub-item {
+            padding-left: 0.5rem;
+        }
+
+
+
+        /* Main content area */
+        .content-area {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            position: relative;
+        }
+
+        .top-bar {
+            height: 50px;
+            background-color: var(--sidebar-bg);
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            align-items: center;
+            padding: 0 1.5rem;
+            justify-content: space-between;
+            box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+            z-index: 5;
+        }
+
+        .btn-toggle {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: var(--primary);
+        }
+
+        .reader-container {
+            flex: 1;
+            position: relative;
+            background-color: #ffffff;
+            height: calc(100vh - 50px);
+        }
+
+        iframe#book-content {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 992px) {
+            .sidebar {
+                position: absolute;
+                left: 0;
+                top: 0;
+                bottom: 0;
+                transform: translateX(-100%);
+            }
+            .sidebar.active {
+                transform: translateX(0);
+            }
+            .btn-toggle {
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Sidebar com o Sumário Nativo para evitar CORS locais -->
+    <div class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <h1>Ensinando na Era Digital</h1>
+            <p>Diretrizes para o ensino e aprendizagem</p>
+        </div>
+        <div class="nav-container">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="OEBPS/front-cover.html" target="content" class="nav-link active">Capa do Livro</a></li>
+                <li class="nav-item"><a href="OEBPS/title-page.html" target="content" class="nav-link">Folha de Rosto</a></li>
+                <li class="nav-item"><a href="OEBPS/copyright.html" target="content" class="nav-link">Direitos Autorais</a></li>
+                <li class="nav-item"><a href="OEBPS/front-matter-001-scenario-a.html" target="content" class="nav-link">Cenário A: Um professor universitário enfrenta a mudança</a></li>
+                <li class="nav-item"><a href="OEBPS/front-matter-002-introduction.html" target="content" class="nav-link">Sobre o livro – e como utilizá-lo</a></li>
+                <li class="nav-item"><a href="OEBPS/front-matter-003-about-the-author.html" target="content" class="nav-link">Sobre o autor</a></li>
+                <li class="nav-item"><a href="OEBPS/front-matter-004-other-books-by-the-author.html" target="content" class="nav-link">Outros livros do autor</a></li>
+                <li class="nav-item"><a href="OEBPS/front-matter-005-updates-and-revisions.html" target="content" class="nav-link">Atualizações e revisões</a></li>
+
+                <!-- Capítulo 1 -->
+                <li class="nav-item part-title"><a href="OEBPS/part-001-chapter-1-fundamental-change-in-education.html" target="content">Capítulo 1: Mudança Fundamental na Educação</a></li>
+                <li class="nav-item nav-sub-item"><a href="OEBPS/chapter-001-structural-changes-in-the-economy-the-growth-of-a-knowledge-society.html" target="content" class="nav-link">1.1 Mudanças estruturais na economia: o crescimento de uma sociedade do conhecimento</a></li>
+                <li class="nav-item nav-sub-item"><a href="OEBPS/chapter-002-section-1-3-the-skills-needed-in-a-digital-age.html" target="content" class="nav-link">1.2 As competências necessárias na era digital</a></li>
+                <li class="nav-item nav-sub-item"><a href="OEBPS/chapter-003-section-1-4-should-post-secondary-education-be-tied-directly-to-the-labour-market.html" target="content" class="nav-link">1.3 A educação deve estar diretamente vinculada ao mercado de trabalho?</a></li>
+                <li class="nav-item nav-sub-item"><a href="OEBPS/chapter-004-section-1-1-the-nature-of-a-university-2.html" target="content" class="nav-link">1.4 Mudança e continuidade</a></li>
+                <li class="nav-item nav-sub-item"><a href="OEBPS/chapter-005-section-1-5-the-impact-of-expansion-on-teaching-methods.html" target="content" class="nav-link">1.5 O impacto da expansão nos métodos de ensino</a></li>
+                <li class="nav-item nav-sub-item"><a href="OEBPS/chapter-006-section-1-6-changing-students-changing-markets-for-higher-education.html" target="content" class="nav-link">1.6 Estudantes em mudança, mercados em mudança para o ensino superior</a></li>
+                <li class="nav-item nav-sub-item"><a href="OEBPS/chapter-007-section-1-7-from-the-periphery-to-the-center-how-technology-is-changing-the-way-we-teach-2.html" target="content" class="nav-link">1.7 Da periferia ao centro: como a tecnologia está mudando a forma como ensinamos</a></li>
+                <li class="nav-item nav-sub-item"><a href="OEBPS/chapter-008-section-1-8-navigating-new-developments-in-technology-and-online-learning.html" target="content" class="nav-link">1.8 Navegando pelos novos desenvolvimentos em tecnologia e aprendizagem on-line</a></li>
+
+                <!-- Capítulo 2 -->
+                <li class="nav-item part-title"><a href="OEBPS/part-002-chapter-2-the-nature-of-knowledge-and-the-implications-for-teaching.html" target="content">Capítulo 2: Natureza do Conhecimento</a></li>
+                <li class="nav-item nav-sub-item"><a href="OEBPS/chapter-009-section-2-1-scenario-a-pre-dinner-party-discussion.html" target="content" class="nav-link">Cenário B: Uma discussão antes do jantar</a></li>
+                <li class="nav-item nav-sub-item"><a href="OEBPS/chapter-010-section-2-2-art-theory-research-and-best-practices-in-teaching.html" target="content" class="nav-link">2.1 Arte, teoria, pesquisa e boas práticas no ensino</a></li>
+                <li class="nav-item nav-sub-item"><a href="OEBPS/chapter-011-section-2-2-epistemology-and-why-its-important.html" target="content" class="nav-link">2.2 Epistemologia e teorias da aprendizagem</a></li>
+                <li class="nav-item nav-sub-item"><a href="OEBPS/chapter-012-section-3-2-behaviourism.html" target="content" class="nav-link">2.3 Objetivismo e behaviorismo</a></li>
+                <li class="nav-item nav-sub-item"><a href="OEBPS/chapter-013-slug-3-3-cognitivism.html" target="content" class="nav-link">2.4 Cognitivismo</a></li>
+                <li class="nav-item nav-sub-item"><a href="OEBPS/chapter-014-section-3-4-constructivism.html" target="content" class="nav-link">2.5 Construtivismo</a></li>
+                <li class="nav-item nav-sub-item"><a href="OEBPS/chapter-015-slug-3-6-connectivism.html" target="content" class="nav-link">2.6 Conectivismo</a></li>
+                <li class="nav-item nav-sub-item"><a href="OEBPS/chapter-016-section-2-4-does-technology-change-the-nature-of-knowledge.html" target="content" class="nav-link">2.7 A natureza do conhecimento está mudando?</a></li>
+                <li class="nav-item nav-sub-item"><a href="OEBPS/chapter-017-section-3-7-conclusion.html" target="content" class="nav-link">2.8 Resumo</a></li>
+
+                <!-- Capítulo 3 -->
+                <li class="nav-item part-title"><a href="OEBPS/part-003-chapter-4-methods-of-teaching.html" target="content">Capítulo 3: Foco Presencial</a></li>
+                <li class="nav-item nav-sub-item"><a href="OEBPS/chapter-018-scenario-a-stats-lecturer-fights-the-system.html" target="content" class="nav-link">Cenário C: Um professor de estatística enfrenta o sistema</a></li>
+                <li class="nav-item nav-sub-item"><a href="OEBPS/chapter-019-section-4-1-five-perspectives-on-teaching.html" target="content" class="nav-link">3.1 Cinco perspectivas sobre o ensino</a></li>
+                <li class="nav-item nav-sub-item"><a href="OEBPS/chapter-020-slug-6-3-the-classroom-design-model.html" target="content" class="nav-link">3.2 As origens do modelo de design de sala de aula</a></li>
+                <li class="nav-item nav-sub-item"><a href="OEBPS/chapter-021-slug-4-2-transmissive-lectures.html" target="content" class="nav-link">3.3 Aulas expositivas: aprender ouvindo</a></li>
+                <li class="nav-item nav-sub-item"><a href="OEBPS/chapter-022-slug-4-3-interactive-lectures-seminars-tutorials-and-moocs.html" target="content" class="nav-link">3.4 Aulas interativas, seminários e tutoriais: aprender conversando</a></li>
+                <li class="nav-item nav-sub-item"><a href="OEBPS/chapter-023-slug-4-4-models-for-teaching-by-doing.html" target="content" class="nav-link">3.5 Aprender fazendo: aprendizagem experiencial</a></li>
+                <li class="nav-item nav-sub-item"><a href="OEBPS/chapter-024-slug-3-5-apprenticeship-learning-by-doing-1.html" target="content" class="nav-link">3.6 Aprender fazendo: aprendizagem por aprendizado prático</a></li>
+                <li class="nav-item nav-sub-item"><a href="OEBPS/chapter-025-slug-4-5-the-nurturing-and-social-reform-models-of-teaching.html" target="content" class="nav-link">3.7 Aprender sendo: os modelos de ensino de apoio e de reforma social</a></li>
+                <li class="nav-item nav-sub-item"><a href="OEBPS/chapter-026-slug-4-6-main-conclusions.html" target="content" class="nav-link">3.8 Principais conclusões</a></li>
+
+                <!-- Capítulo 4 -->
+                <li class="nav-item part-title"><a href="OEBPS/part-004-chapter-6-models-for-designing-teaching-and-learning.html" target="content">Capítulo 4: Foco On-line</a></li>
+                <li class="nav-item nav-sub-item"><a href="OEBPS/chapter-027-scenario-5-1-developing-historical-thinking.html" target="content" class="nav-link">Cenário D: Desenvolvendo o pensamento histórico</a></li>
+                <li class="nav-item nav-sub-item"><a href="OEBPS/chapter-028-slug-4-1-online-learning-and-teaching-methods.html" target="content" class="nav-link">4.1 Aprendizagem on-line e métodos de ensino</a></li>
+                <li class="nav-item nav-sub-item"><a href="OEBPS/chapter-029-slug-6-4-old-wine-in-new-bottles-classroom-type-online-learning.html" target="content" class="nav-link">4.2 Velho vinho em garrafas novas: aprendizagem on-line do tipo sala de aula</a></li>
+                <li class="nav-item nav-sub-item"><a href="OEBPS/chapter-030-slug-6-5-the-addie-model.html" target="content" class="nav-link">4.3 O modelo ADDIE</a></li>
+                <li class="nav-item nav-sub-item"><a href="OEBPS/chapter-031-slug-6-5-online-collaborative-learning.html" target="content" class="nav-link">4.4 Aprendizagem colaborativa on-line</a></li>
+                <li class="nav-item nav-sub-item"><a href="OEBPS/chapter-032-slug-6-6-competency-based-learning.html" target="content" class="nav-link">4.5 Aprendizagem baseada em competências</a></li>
+                <li class="nav-item nav-sub-item"><a href="OEBPS/chapter-033-slug-6-7-experiential-learning.html" target="content" class="nav-link">4.6 Comunidades de prática</a></li>
+                <li class="nav-item nav-sub-item"><a href="OEBPS/chapter-034-scenario-e-etec-522-ventures-in-e-learning.html" target="content" class="nav-link">Cenário E: ETEC 522: Empreendimentos em e-Learning</a></li>
+                <li class="nav-item nav-sub-item"><a href="OEBPS/chapter-035-slug-6-10-agile-design-flexible-designs-for-learning.html" target="content" class="nav-link">4.7 Design 'Ágil': designs flexíveis para a aprendizagem</a></li>
+                <li class="nav-item nav-sub-item"><a href="OEBPS/chapter-036-conclusions.html" target="content" class="nav-link">4.8 Tomando decisões sobre métodos de ensino</a></li>
+
+                <!-- Capítulo 5 -->
+                <li class="nav-item part-title"><a href="OEBPS/part-005-chapter-7-moocs.html" target="content">Capítulo 5: MOOCs</a></li>
+                <li class="nav-item nav-sub-item"><a href="OEBPS/chapter-037-section-7-2.html" target="content" class="nav-link">5.1 Breve histórico</a></li>
+                <li class="nav-item nav-sub-item"><a href="OEBPS/chapter-038-section-7-1.html" target="content" class="nav-link">5.2 O que é um MOOC?</a></li>
+                <li class="nav-item nav-sub-item"><a href="OEBPS/chapter-039-section-7-4-design-models-for-moocs.html" target="content" class="nav-link">5.3 Uma taxonomia dos MOOCs</a></li>
+                <li class="nav-item nav-sub-item"><a href="OEBPS/chapter-040-section-7-5-strengths-and-weaknesses-of-moocs.html" target="content" class="nav-link">5.4 Pontos fortes e fracos dos MOOCs</a></li>
+                <li class="nav-item nav-sub-item"><a href="OEBPS/chapter-041-section-7-6-political-social-and-economic-drivers-of-moocs.html" target="content" class="nav-link">5.5 Fatores políticos, sociais e econômicos dos MOOCs</a></li>
+                <li class="nav-item nav-sub-item"><a href="OEBPS/chapter-042-section-7-6-why-moocs-are-only-part-of-the-answer.html" target="content" class="nav-link">5.6 Por que os MOOCs são apenas parte da resposta</a></li>
+                <li class="nav-item nav-sub-item"><a href="OEBPS/chapter-043-slug-7-7-references-on-moocs.html" target="content" class="nav-link">Cenário F: Como lidar com o envelhecimento</a></li>
+
+                <!-- Capítulo 6 -->
+                <li class="nav-item part-title"><a href="OEBPS/part-006-chapter-5-building-an-effective-learning-environment.html" target="content">Capítulo 6: Ambiente de Aprendizagem</a></li>
+                <li class="nav-item nav-sub-item"><a href="OEBPS/chapter-044-moving-from-theory-to-practice.html" target="content" class="nav-link">6.1 Integrando princípios de design em um ambiente de aprendizagem rico</a></li>
+                <li class="nav-item nav-sub-item"><a href="OEBPS/chapter-045-slug-5-2-what-is-a-learning-environment.html" target="content" class="nav-link">6.2 O que é um ambiente de aprendizagem?</a></li>
+                <li class="nav-item nav-sub-item"><a href="OEBPS/chapter-046-slug-5-3-learner-characteristics.html" target="content" class="nav-link">6.3 Características dos aprendizes</a></li>
+                <li class="nav-item nav-sub-item"><a href="OEBPS/chapter-047-slug-5-4-managing-content.html" target="content" class="nav-link">6.4 Gerenciamento de conteúdo</a></li>
+                <li class="nav-item nav-sub-item"><a href="OEBPS/chapter-048-slug-5-5-developing-skills.html" target="content" class="nav-link">6.5 Desenvolvimento de competências</a></li>
+                <li class="nav-item nav-sub-item"><a href="OEBPS/chapter-049-slug-5-6-learner-support.html" target="content" class="nav-link">6.6 Suporte ao aprendiz</a></li>
+                <li class="nav-item nav-sub-item"><a href="OEBPS/chapter-050-slug-5-7-resources.html" target="content" class="nav-link">6.7 Recursos</a></li>
+                <li class="nav-item nav-sub-item"><a href="OEBPS/chapter-051-slug-5-8-assessment-of-learning.html" target="content" class="nav-link">6.8 Avaliação da aprendizagem</a></li>
+                <li class="nav-item nav-sub-item"><a href="OEBPS/chapter-052-a-9-culture-and-learning-environments.html" target="content" class="nav-link">6.9 Cultura e ambientes de aprendizagem</a></li>
+                <li class="nav-item nav-sub-item"><a href="OEBPS/chapter-053-slug-6-10-conclusions.html" target="content" class="nav-link">6.10 Conclusões</a></li>
+
+                <!-- Capítulo 7 -->
+                <li class="nav-item part-title"><a href="OEBPS/part-007-chapter-8-understanding-technology.html" target="content">Capítulo 7: Tecnologia na Educação</a></li>
+                <li class="nav-item nav-sub-item"><a href="OEBPS/chapter-054-section-8-2-chossing-technologies-for-teaching-and-learning-the-challenge.html" target="content" class="nav-link">7.1 Escolhendo tecnologias para o ensino e a aprendizagem: o desafio</a></li>
+                <li class="nav-item nav-sub-item"><a href="OEBPS/chapter-055-section-8-1-a-short-history-of-educational-technology.html" target="content" class="nav-link">7.2 Breve história da tecnologia educacional</a></li>
+                <li class="nav-item nav-sub-item"><a href="OEBPS/chapter-056-slug-8-6-media-or-technology.html" target="content" class="nav-link">7.3 Mídia ou tecnologia?</a></li>
+                <li class="nav-item nav-sub-item"><a href="OEBPS/chapter-057-slug-7-4-assessing-media-affordances-the-samr-model.html" target="content" class="nav-link">7.4 Avaliando as affordances da mídia: o modelo SAMR</a></li>
+                <li class="nav-item nav-sub-item"><a href="OEBPS/chapter-058-slug-8-3-broadcast-vs-communicative-technologies.html" target="content" class="nav-link">7.5 Mídia de transmissão vs. mídia comunicativa</a></li>
+                <li class="nav-item nav-sub-item"><a href="OEBPS/chapter-059-slug-8-4-synchronous-vs-asynchronous.html" target="content" class="nav-link">7.6 As dimensões de tempo e espaço da mídia</a></li>
+                <li class="nav-item nav-sub-item"><a href="OEBPS/chapter-060-slug-8-7-media-richness.html" target="content" class="nav-link">7.7 Riqueza da mídia</a></li>
+                <li class="nav-item nav-sub-item"><a href="OEBPS/chapter-061-slug-8-8-understanding-the-foundations-of-educational-media.html" target="content" class="nav-link">7.8 Compreendendo os fundamentos da mídia educacional</a></li>
+
+                <!-- Capítulo 8 -->
+                <li class="nav-item part-title"><a href="OEBPS/part-008-chapter-8-pedagogical-differences-between-media.html" target="content">Capítulo 8: Diferenças entre Mídias</a></li>
+                <li class="nav-item nav-sub-item"><a href="OEBPS/chapter-062-slug-7-1-thinking-about-the-pedagogical-difference-sof-media.html" target="content" class="nav-link">8.1 Refletindo sobre as diferenças pedagógicas das mídias</a></li>
+                <li class="nav-item nav-sub-item"><a href="OEBPS/chapter-063-slug-8-8-pedagogical-differences-between-media.html" target="content" class="nav-link">8.2 Texto</a></li>
+                <li class="nav-item nav-sub-item"><a href="OEBPS/chapter-064-slug-9-5-2-audio.html" target="content" class="nav-link">8.3 Áudio</a></li>
+                <li class="nav-item nav-sub-item"><a href="OEBPS/chapter-065-slug-9-5-3-video.html" target="content" class="nav-link">8.4 Vídeo</a></li>
+                <li class="nav-item nav-sub-item"><a href="OEBPS/chapter-066-computers-and-learning.html" target="content" class="nav-link">8.5 Computação</a></li>
+                <li class="nav-item nav-sub-item"><a href="OEBPS/chapter-067-slug-9-5-5-social-media.html" target="content" class="nav-link">8.6 Mídias sociais</a></li>
+                <li class="nav-item nav-sub-item"><a href="OEBPS/chapter-068-slug-8-7-emerging-technologies.html" target="content" class="nav-link">8.7.a Tecnologias emergentes: jogos sérios e gamificação</a></li>
+                <li class="nav-item nav-sub-item"><a href="OEBPS/chapter-069-slug-8-7-2-emerging-technologies-virtual-augmented-mixed-reality.html" target="content" class="nav-link">8.7.b Tecnologias emergentes: realidade virtual e aumentada</a></li>
+                <li class="nav-item nav-sub-item"><a href="OEBPS/chapter-070-slug-8-7-c-artificial-intelligence.html" target="content" class="nav-link">8.7c Tecnologias emergentes: inteligência artificial</a></li>
+                <li class="nav-item nav-sub-item"><a href="OEBPS/chapter-071-slug-8-7-c-emerging-technologies-conclusion-and-summary.html" target="content" class="nav-link">8.7.d Tecnologias emergentes: conclusão e resumo</a></li>
+                <li class="nav-item nav-sub-item"><a href="OEBPS/chapter-072-slug-7-7-a-framework-for-analysing-the-pedagogical-characteristics-of-educational-media.html" target="content" class="nav-link">8.8 Um framework para analisar as características pedagógicas da mídia educacional</a></li>
+
+                <!-- Capítulo 9 -->
+                <li class="nav-item part-title"><a href="OEBPS/part-009-slug-9-pedagogical-differences-between-media.html" target="content">Capítulo 9: Modelo SECTIONS</a></li>
+                <li class="nav-item nav-sub-item"><a href="OEBPS/chapter-073-slug-9-1-models-for-media-selection.html" target="content" class="nav-link">9.1 Modelos para seleção de mídia</a></li>
+                <li class="nav-item nav-sub-item"><a href="OEBPS/chapter-074-slug-9-2-the-sections-model.html" target="content" class="nav-link">9.2 Estudantes (Students)</a></li>
+                <li class="nav-item nav-sub-item"><a href="OEBPS/chapter-075-slug-9-3-the-sections-model-ease-of-use.html" target="content" class="nav-link">9.3 Facilidade de uso (Ease of Use)</a></li>
+                <li class="nav-item nav-sub-item"><a href="OEBPS/chapter-076-slug-9-4-the-sections-model-cost.html" target="content" class="nav-link">9.4 Custo (Cost)</a></li>
+                <li class="nav-item nav-sub-item"><a href="OEBPS/chapter-077-slug-9-media-design-principles.html" target="content" class="nav-link">9.5 Ensino e seleção de mídia</a></li>
+                <li class="nav-item nav-sub-item"><a href="OEBPS/chapter-078-pedagogical-roles-for-text-audio-and-video.html" target="content" class="nav-link">9.6 Interação</a></li>
+                <li class="nav-item nav-sub-item"><a href="OEBPS/chapter-079-slug-9-8-organizational-issues.html" target="content" class="nav-link">9.7 Questões organizacionais</a></li>
+                <li class="nav-item nav-sub-item"><a href="OEBPS/chapter-080-slug-9-8-the-sections-model-networkingnovelty-and-speedsecurity.html" target="content" class="nav-link">9.8 Rede (e novidade)</a></li>
+                <li class="nav-item nav-sub-item"><a href="OEBPS/chapter-081-slug-9-9-the-sections-model-speed-and-security.html" target="content" class="nav-link">9.9 Segurança e privacidade</a></li>
+                <li class="nav-item nav-sub-item"><a href="OEBPS/chapter-082-models-for-choosing-media-and-technologies.html" target="content" class="nav-link">9.10 Decidindo</a></li>
+
+                <!-- Capítulo 10 -->
+                <li class="nav-item part-title"><a href="OEBPS/part-010-chapter-10-modes-of-delivery.html" target="content">Capítulo 10: Modalidades de Ensino</a></li>
+                <li class="nav-item nav-sub-item"><a href="OEBPS/chapter-083-slug-10-2-the-continuum-of-technology-based-learning.html" target="content" class="nav-link">10.1 O continuum da aprendizagem baseada em tecnologia</a></li>
+                <li class="nav-item nav-sub-item"><a href="OEBPS/chapter-084-slug-10-3-comparing-delivery-methods.html" target="content" class="nav-link">10.2 Comparando modalidades de ensino</a></li>
+                <li class="nav-item nav-sub-item"><a href="OEBPS/chapter-085-slug-10-3-2-which-mode.html" target="content" class="nav-link">10.3 Qual modalidade? Necessidades dos estudantes</a></li>
+                <li class="nav-item nav-sub-item"><a href="OEBPS/chapter-086-slug-10-6-choosing-modes.html" target="content" class="nav-link">10.4 Escolhendo entre o ensino presencial e o ensino on-line</a></li>
+                <li class="nav-item nav-sub-item"><a href="OEBPS/chapter-087-slug-10-5-which-mode-pedagogical-issues.html" target="content" class="nav-link">10.5 O futuro do campus</a></li>
+
+                <!-- Capítulo 11 -->
+                <li class="nav-item part-title"><a href="OEBPS/part-011-slug-10-trends-in-open-education.html" target="content">Capítulo 11: Educação Aberta</a></li>
+                <li class="nav-item nav-sub-item"><a href="OEBPS/chapter-088-scenario-f-watershed-management.html" target="content" class="nav-link">Cenário H: Gestão de bacias hidrográficas</a></li>
+                <li class="nav-item nav-sub-item"><a href="OEBPS/chapter-089-slug-10-4-open-education.html" target="content" class="nav-link">11.1 Aprendizagem aberta</a></li>
+                <li class="nav-item nav-sub-item"><a href="OEBPS/chapter-090-oer.html" target="content" class="nav-link">11.2 Recursos Educacionais Abertos (REA)</a></li>
+                <li class="nav-item nav-sub-item"><a href="OEBPS/chapter-091-slug-10-8-open-textbooks.html" target="content" class="nav-link">11.3 Livros didáticos abertos, pesquisa aberta e dados abertos</a></li>
+                <li class="nav-item nav-sub-item"><a href="OEBPS/chapter-092-slug-11-4-open-pedagogy.html" target="content" class="nav-link">11.4 Pedagogia aberta</a></li>
+                <li class="nav-item nav-sub-item"><a href="OEBPS/chapter-093-slug-10-10-the-implications-of-open-for-course-and-program-design.html" target="content" class="nav-link">11.5 Implicações do 'aberto' para o design</a></li>
+
+                <!-- Capítulo 12 -->
+                <li class="nav-item part-title"><a href="OEBPS/part-012-ensuring-quality-teaching-in-a-digital-age.html" target="content">Capítulo 12: Qualidade no Ensino</a></li>
+                <li class="nav-item nav-sub-item"><a href="OEBPS/chapter-094-slug-11-1-what-do-we-mean-by-quality-when-teaching-in-a-digital-age.html" target="content" class="nav-link">12.1 Conceito de qualidade na era digital</a></li>
+                <li class="nav-item nav-sub-item"><a href="OEBPS/chapter-095-slug-11-2-nine-steps-to-quality-teaching-in-a-digital-age.html" target="content" class="nav-link">12.2 Nove passos para um ensino de qualidade</a></li>
+                <li class="nav-item nav-sub-item"><a href="OEBPS/chapter-096-slug-11-3-step-one-decide-how-you-want-to-teach.html" target="content" class="nav-link">12.3 Passo Um: Definir como pretende ensinar</a></li>
+                <li class="nav-item nav-sub-item"><a href="OEBPS/chapter-097-slug-11-4-what-kind-of-course-or-program.html" target="content" class="nav-link">12.4 Passo Dois: Escolher a modalidade de ensino</a></li>
+                <li class="nav-item nav-sub-item"><a href="OEBPS/chapter-098-slug-11-5-step-three.html" target="content" class="nav-link">12.5 Passo Três: Trabalhar em equipe</a></li>
+                <li class="nav-item nav-sub-item"><a href="OEBPS/chapter-099-slug-11-6-build-on-existing-resources.html" target="content" class="nav-link">12.6 Passo Quatro: Mobilizar recursos existentes</a></li>
+                <li class="nav-item nav-sub-item"><a href="OEBPS/chapter-100-slug-11-7-step-five-master-the-technology.html" target="content" class="nav-link">12.7 Passo Cinco: Dominar a tecnologia</a></li>
+                <li class="nav-item nav-sub-item"><a href="OEBPS/chapter-101-slug-11-8-step-six-set-appropriate-learning-goals.html" target="content" class="nav-link">12.8 Passo Seis: Definir objetivos de aprendizagem adequados</a></li>
+                <li class="nav-item nav-sub-item"><a href="OEBPS/chapter-102-slug-11-9-step-seven.html" target="content" class="nav-link">12.9 Passo Sete: Desenhar a estrutura e as atividades letivas</a></li>
+                <li class="nav-item nav-sub-item"><a href="OEBPS/chapter-103-slug-11-10-step-eight-communicate-communicate-communicate.html" target="content" class="nav-link">12.10 Passo Oito: Comunicar, comunicar, comunicar</a></li>
+                <li class="nav-item nav-sub-item"><a href="OEBPS/chapter-104-slug-11-step-nine-evaluate-and-innovate.html" target="content" class="nav-link">12.11 Passo Nove: Avaliar e inovar</a></li>
+                <li class="nav-item nav-sub-item"><a href="OEBPS/chapter-105-slug-11-12-building-a-strong-foundation.html" target="content" class="nav-link">12.12 Construir uma base sólida para o design do curso</a></li>
+
+                <!-- Capítulo 13 -->
+                <li class="nav-item part-title"><a href="OEBPS/part-013-chapter-12-supporting-teachers-and-instructors-in-a-digital-age.html" target="content">Capítulo 13: Apoiar Professores</a></li>
+                <li class="nav-item nav-sub-item"><a href="OEBPS/chapter-106-slug-12-1-unreaistic-expectations-for-teachers-and-instructors.html" target="content" class="nav-link">13.1 Você é um super-herói?</a></li>
+                <li class="nav-item nav-sub-item"><a href="OEBPS/chapter-107-slug-12-3-faculty-development-and-training.html" target="content" class="nav-link">13.2 Capacitação e formação na era digital</a></li>
+                <li class="nav-item nav-sub-item"><a href="OEBPS/chapter-108-slug-12-4-learning-technology-support.html" target="content" class="nav-link">13.3 Suporte às tecnologias de aprendizagem</a></li>
+                <li class="nav-item nav-sub-item"><a href="OEBPS/chapter-109-slug-12-5-conditions-of-exployment.html" target="content" class="nav-link">13.4 Condições de trabalho</a></li>
+                <li class="nav-item nav-sub-item"><a href="OEBPS/chapter-110-slug-12-6-team-teaching.html" target="content" class="nav-link">13.5 Docência em equipe</a></li>
+                <li class="nav-item nav-sub-item"><a href="OEBPS/chapter-111-slug-12-2-an-institutional-strategy-for-teaching-in-a-digital-age.html" target="content" class="nav-link">13.6 Uma estratégia institucional para o ensino na era digital</a></li>
+                <li class="nav-item nav-sub-item"><a href="OEBPS/chapter-112-slug-12-7.html" target="content" class="nav-link">13.7 Construindo o futuro</a></li>
+                <li class="nav-item nav-sub-item"><a href="OEBPS/chapter-113-scenario-g.html" target="content" class="nav-link">Cenário I: Deter a gripe</a></li>
+
+                <!-- Apêndice 1 -->
+                <li class="nav-item part-title"><a href="OEBPS/part-014-appendix-2-questions-to-guide-media-selection-and-use.html" target="content">Apêndice 1: Seleção de Mídias</a></li>
+                <li class="nav-item nav-sub-item"><a href="OEBPS/chapter-114-s-who-are-your-students.html" target="content" class="nav-link">S: Quem são os seus estudantes?</a></li>
+                <li class="nav-item nav-sub-item"><a href="OEBPS/chapter-115-e-ease-of-use.html" target="content" class="nav-link">E: Facilidade de uso</a></li>
+                <li class="nav-item nav-sub-item"><a href="OEBPS/chapter-116-c-what-is-the-cost-in-money-and-time.html" target="content" class="nav-link">C: Qual o custo em tempo e recursos financeiros?</a></li>
+                <li class="nav-item nav-sub-item"><a href="OEBPS/chapter-117-t-teaching-and-other-pedagogical-factors.html" target="content" class="nav-link">T: Docência e outros fatores pedagógicos</a></li>
+                <li class="nav-item nav-sub-item"><a href="OEBPS/chapter-118-i-interaction.html" target="content" class="nav-link">I: Interação</a></li>
+                <li class="nav-item nav-sub-item"><a href="OEBPS/chapter-119-o-organisational-issues.html" target="content" class="nav-link">O: Fatores organizacionais</a></li>
+                <li class="nav-item nav-sub-item"><a href="OEBPS/chapter-120-n-networking.html" target="content" class="nav-link">N: Trabalho em rede (Networking)</a></li>
+                <li class="nav-item nav-sub-item"><a href="OEBPS/chapter-121-s-security-and-privacy.html" target="content" class="nav-link">S: Segurança e privacidade</a></li>
+
+                <!-- Outros Apêndices -->
+                <li class="nav-item part-title"><a href="OEBPS/part-015-appendix-3-online-learning-quality-standards-organisations-and-research.html" target="content">Apêndice 2: Organizações e Pesquisa</a></li>
+                <li class="nav-item part-title"><a href="OEBPS/part-016-appendix-2-independent-commissioned-reviews.html" target="content">Apêndice 3: Avaliações Independentes</a></li>
+                <li class="nav-item nav-sub-item"><a href="OEBPS/chapter-122-a-review-from-a-faculty-perspective.html" target="content" class="nav-link">Resenha Docente: Prof. James Mitchell</a></li>
+                <li class="nav-item nav-sub-item"><a href="OEBPS/chapter-123-a-review-from-an-open-and-distance-education-perspective.html" target="content" class="nav-link">Resenha EAD: Sir John Daniel</a></li>
+                <li class="nav-item nav-sub-item"><a href="OEBPS/chapter-124-a-review-from-a-digital-education-perspective.html" target="content" class="nav-link">Resenha Educação Digital: Ryerson University</a></li>
+                <li class="nav-item nav-sub-item"><a href="OEBPS/chapter-125-merlot-ii-peer-review.html" target="content" class="nav-link">Avaliação por pares MERLOT II</a></li>
+
+                <li class="nav-item part-title"><a href="OEBPS/part-017-feedback-on-activities.html" target="content">Feedback das Atividades</a></li>
+                <li class="nav-item nav-sub-item"><a href="OEBPS/chapter-126-feedback-on-activity-1-4.html" target="content" class="nav-link">Feedback Atividade 1.8</a></li>
+                <li class="nav-item nav-sub-item"><a href="OEBPS/chapter-127-activity-8-1-how-many-technologies-can-you-see-in-figure-8-1.html" target="content" class="nav-link">Feedback Atividade 7.1</a></li>
+                <li class="nav-item nav-sub-item"><a href="OEBPS/chapter-128-activity-8-4-broadcast-or-communicative.html" target="content" class="nav-link">Feedback Atividade 7.5</a></li>
+
+                <li class="nav-item"><a href="OEBPS/back-matter-001-bibliography-2.html" target="content" class="nav-link">Referências Bibliográficas</a></li>
+                <li class="nav-item"><a href="OEBPS/back-matter-002-index.html" target="content" class="nav-link">Navegação e Busca</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <!-- Conteúdo principal do livro -->
+    <div class="content-area">
+        <div class="top-bar">
+            <button class="btn-toggle" onclick="toggleSidebar()">☰ Menu</button>
+            <div style="font-weight: 600; font-size: 0.95rem; color: #1e3a8a;">Ensinando na Era Digital</div>
+            <div style="display: flex; align-items: center; gap: 1rem;">
+                <button id="theme-toggle" class="theme-toggle-btn" aria-label="Alternar tema" onclick="toggleTheme()">
+                    <span class="icon-theme">🌙</span>
+                </button>
+                <a href="index.html" style="text-decoration: none; color: var(--primary); font-size: 0.9rem; font-weight: 500;">Página Inicial</a>
+            </div>
+        </div>
+        <div class="reader-container">
+            <!-- Frame onde o conteúdo dos capítulos é carregado dinamicamente -->
+            <iframe src="OEBPS/front-cover.html" name="content" id="book-content"></iframe>
+        </div>
+    </div>
+
+    <script>
+        function toggleSidebar() {
+            document.getElementById('sidebar').classList.toggle('active');
+        }
+
+        // Controle e gerenciamento de Tema (Claro / Escuro)
+        var currentTheme = localStorage.getItem('theme') || 'light';
+        var htmlEl = document.documentElement;
+        var themeToggleBtn = document.getElementById('theme-toggle');
+        var themeIcon = themeToggleBtn.querySelector('.icon-theme');
+
+        function applyTheme(theme) {
+            if (theme === 'dark') {
+                htmlEl.classList.add('dark-theme');
+                themeIcon.textContent = '☀️';
+            } else {
+                htmlEl.classList.remove('dark-theme');
+                themeIcon.textContent = '🌙';
+            }
+            updateIframeTheme(theme);
+        }
+
+        function toggleTheme() {
+            if (htmlEl.classList.contains('dark-theme')) {
+                currentTheme = 'light';
+            } else {
+                currentTheme = 'dark';
+            }
+            localStorage.setItem('theme', currentTheme);
+            applyTheme(currentTheme);
+        }
+
+        function updateIframeTheme(theme) {
+            var iframe = document.getElementById('book-content');
+            if (iframe && iframe.src) {
+                var src = iframe.src;
+                src = src.replace(/[?&]theme=[^&]+/g, '');
+                src += (src.indexOf('?') >= 0 ? '&' : '?') + 'theme=' + theme;
+                iframe.src = src;
+            }
+        }
+
+        // Inicializa o tema na primeira carga
+        applyTheme(currentTheme);
+
+        // Intercepta cliques nos links para atualizar o iframe repassando o tema atual na query string
+        const links = document.querySelectorAll('.nav-link, .nav-item.part-title a');
+        links.forEach(link => {
+            link.addEventListener('click', function(e) {
+                var href = this.getAttribute('href');
+                if (href && href !== '#') {
+                    e.preventDefault();
+                    var theme = htmlEl.classList.contains('dark-theme') ? 'dark' : 'light';
+                    href = href.replace(/[?&]theme=[^&]+/g, '');
+                    href += (href.indexOf('?') >= 0 ? '&' : '?') + 'theme=' + theme;
+                    document.getElementById('book-content').src = href;
+                }
+                
+                links.forEach(l => l.classList.remove('active'));
+                this.classList.add('active');
+                
+                // Fecha a sidebar em dispositivos móveis
+                if (window.innerWidth <= 992) {
+                    document.getElementById('sidebar').classList.remove('active');
+                }
+            });
+        });
+
+        // Configura o carregamento inicial do iframe
+        window.addEventListener('DOMContentLoaded', function() {
+            var iframe = document.getElementById('book-content');
+            if (iframe) {
+                iframe.addEventListener('load', function() {
+                    // Tenta forçar o tema caso ele tenha recarregado de outra forma
+                    try {
+                        var iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
+                        if (currentTheme === 'dark') {
+                            iframeDoc.documentElement.classList.add('dark-theme');
+                        } else {
+                            iframeDoc.documentElement.classList.remove('dark-theme');
+                        }
+                    } catch(e) {
+                        // CORS local pode impedir acesso direto ao document, mas a query string resolve isso via theme.js
+                    }
+                });
+            }
+        });
+
+        // Sincroniza a barra lateral ao receber mensagem do iframe de capítulo
+        window.addEventListener('message', function(event) {
+            if (event.data && event.data.type === 'page-navigation') {
+                var path = event.data.path;
+                if (path) {
+                    var filename = path.substring(path.lastIndexOf('/') + 1);
+                    if (filename) {
+                        // Limpa parâmetros de query string ou hash que possam vir no path
+                        filename = filename.split(/[?#]/)[0];
+                        
+                        var targetLink = document.querySelector('.nav-link[href*="' + filename + '"], .nav-item.part-title a[href*="' + filename + '"]');
+                        if (targetLink) {
+                            const links = document.querySelectorAll('.nav-link, .nav-item.part-title a');
+                            links.forEach(l => l.classList.remove('active'));
+                            targetLink.classList.add('active');
+                            
+                            // Rola a barra lateral suavemente se o item estiver fora de tela
+                            targetLink.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                        }
+                    }
+                }
+            }
+        });
+
+        // Registro do Service Worker para PWA
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('sw.js')
+                    .then(reg => console.log('Service Worker do leitor registrado:', reg.scope))
+                    .catch(err => console.log('Falha ao registrar o Service Worker no leitor:', err));
+            });
+        }
+    </script>
+
+</body>
+</html>

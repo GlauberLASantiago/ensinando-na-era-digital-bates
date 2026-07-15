@@ -1,0 +1,18 @@
+{
+  "name": "Ensinando na Era Digital - Segunda Edição",
+  "short_name": "Era Digital",
+  "description": "Tradução em Português do livro de Tony Bates com recursos de áudio, modo escuro e leitura offline.",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#1e3a8a",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "OEBPS/assets/logo-horizonte.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
