@@ -4,6 +4,12 @@ Este repositório contém a versão em português (tradução brasileira) do liv
 
 A iniciativa visa difundir o trabalho de excelência do autor, facilitando e ampliando o acesso para educadores, gestores e pesquisadores no Brasil. O site foi projetado como um aplicativo web progressivo (PWA), oferecendo uma experiência moderna de leitura e um audiobook integrado por capítulos.
 
+## 🔗 Link de Acesso
+
+Você pode acessar a versão online do livro diretamente em:
+👉 **[https://glauberlasantiago.github.io/ensinando-na-era-digital-bates/](https://glauberlasantiago.github.io/ensinando-na-era-digital-bates/)**
+
+
 ## 📋 Ficha Técnica e Apoio
 
 *   **Autor Original:** A.W. (Tony) Bates
