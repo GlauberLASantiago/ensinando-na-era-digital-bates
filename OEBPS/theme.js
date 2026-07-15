@@ -25,7 +25,7 @@
         }, '*');
     } catch(e) {}
     
-    // Propaga o tema para cliques em links locais dentro do iframe
+    // Propaga o tema e redireciona os áudios locais para o GitHub Pages em produção
     window.addEventListener('DOMContentLoaded', function() {
         if (theme) {
             var links = document.getElementsByTagName('a');
@@ -36,6 +36,22 @@
                     href = href.replace(/[?&]theme=[^&]+/g, '');
                     href += (href.indexOf('?') >= 0 ? '&' : '?') + 'theme=' + theme;
                     links[i].setAttribute('href', href);
+                }
+            }
+        }
+
+        // Redireciona áudios locais para o GitHub Pages quando rodando no Firebase
+        if (window.location.hostname && window.location.hostname !== 'localhost' && window.location.hostname !== '127.0.0.1') {
+            var githubBase = "https://glauberlasantiago.github.io/ensinando-na-era-digital-bates/OEBPS/";
+            var audioEl = document.getElementById('tts-audio');
+            if (audioEl) {
+                var sourceEl = document.getElementById('audio-source');
+                if (sourceEl) {
+                    var currentSrc = sourceEl.getAttribute('src');
+                    if (currentSrc && currentSrc.indexOf('http') !== 0) {
+                        sourceEl.setAttribute('src', githubBase + currentSrc);
+                        audioEl.load(); // Recarrega para aplicar a nova URL
+                    }
                 }
             }
         }

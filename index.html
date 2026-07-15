@@ -957,6 +957,23 @@
         });
 
         // Lógica do Player de Audiobook
+        // Redireciona os arquivos de áudio para o GitHub Pages quando carregado em produção (Firebase)
+        if (window.location.hostname && window.location.hostname !== 'localhost' && window.location.hostname !== '127.0.0.1') {
+            var githubAudiobookBase = "https://glauberlasantiago.github.io/ensinando-na-era-digital-bates/";
+            document.querySelectorAll('.play-btn').forEach(btn => {
+                var src = btn.getAttribute('data-src');
+                if (src && src.indexOf('http') !== 0) {
+                    btn.setAttribute('data-src', githubAudiobookBase + src);
+                }
+            });
+            document.querySelectorAll('.download-btn').forEach(link => {
+                var href = link.getAttribute('href');
+                if (href && href.indexOf('http') !== 0) {
+                    link.setAttribute('href', githubAudiobookBase + href);
+                }
+            });
+        }
+
         const audioPlayer = document.createElement('audio');
         document.body.appendChild(audioPlayer);
         let activePlayBtn = null;
